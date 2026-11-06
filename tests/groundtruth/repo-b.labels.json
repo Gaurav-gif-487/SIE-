@@ -1,0 +1,199 @@
+{
+  "$comment": "Independent, hand-written ground truth. Each site was labelled by reading the source, NOT by running the engine. 'category' records why the site is a may-caller: direct (receiver type is the declaring class), virtual (receiver is a supertype, dispatch may reach this body), indirect (the body is invoked through a value: bind/callback/function variable), dynamic (computed member access; no static target). Strict scoring uses direct+virtual only; indirect/dynamic are reported separately because a static engine is expected to report them as open sites rather than callers.",
+  "repository": "tests/fixtures/repo-b",
+  "method": "manual-label",
+  "labelledBy": "human-read source review",
+  "targets": [
+    {
+      "task": "FindCallers",
+      "symbol": "JsonHandler.handle",
+      "declaration": "src/handlers.ts:4",
+      "groundTruth": [
+        {
+          "site": "src/default-export.ts:5",
+          "category": "direct"
+        },
+        {
+          "site": "src/dispatch.ts:11",
+          "category": "direct"
+        },
+        {
+          "site": "src/dispatch.ts:22",
+          "category": "direct"
+        },
+        {
+          "site": "src/indirect.ts:26",
+          "category": "direct"
+        },
+        {
+          "site": "src/indirect.ts:31",
+          "category": "direct"
+        },
+        {
+          "site": "src/dispatch.ts:6",
+          "category": "virtual"
+        },
+        {
+          "site": "src/dispatch.ts:16",
+          "category": "virtual"
+        },
+        {
+          "site": "src/indirect.ts:16",
+          "category": "virtual"
+        },
+        {
+          "site": "src/indirect.ts:41",
+          "category": "virtual"
+        },
+        {
+          "site": "src/indirect.ts:9",
+          "category": "indirect"
+        },
+        {
+          "site": "src/indirect.ts:36",
+          "category": "dynamic"
+        }
+      ]
+    },
+    {
+      "task": "FindCallers",
+      "symbol": "XmlHandler.handle",
+      "declaration": "src/handlers.ts:10",
+      "groundTruth": [
+        {
+          "site": "src/dispatch.ts:11",
+          "category": "direct"
+        },
+        {
+          "site": "src/dispatch.ts:6",
+          "category": "virtual"
+        },
+        {
+          "site": "src/dispatch.ts:16",
+          "category": "virtual"
+        },
+        {
+          "site": "src/indirect.ts:16",
+          "category": "virtual"
+        },
+        {
+          "site": "src/indirect.ts:41",
+          "category": "virtual"
+        }
+      ]
+    },
+    {
+      "task": "FindCallers",
+      "symbol": "Unrelated.handle",
+      "declaration": "src/handlers.ts:17",
+      "groundTruth": [
+        {
+          "site": "src/dispatch.ts:28",
+          "category": "direct"
+        }
+      ]
+    },
+    {
+      "task": "FindCallers",
+      "symbol": "BaseHandler.log",
+      "declaration": "src/types.ts:8",
+      "groundTruth": [
+        {
+          "site": "src/dispatch.ts:34",
+          "category": "direct"
+        }
+      ]
+    },
+    {
+      "task": "FindCallers",
+      "symbol": "makeHandler",
+      "declaration": "src/handlers.ts:22",
+      "groundTruth": [
+        {
+          "site": "src/indirect.ts:41",
+          "category": "direct"
+        },
+        {
+          "site": "src/indirect.ts:15",
+          "category": "indirect"
+        }
+      ]
+    }
+  ],
+  "calleeTargets": [
+    {
+      "task": "FindCallees",
+      "symbol": "invokeGeneric",
+      "declaration": "src/dispatch.ts:5",
+      "$comment": "h.handle resolves to the interface member; the bodies that may run are the two concrete implementations. BaseHandler.handle is abstract, so it is not a body.",
+      "mayExecute": [
+        "Handler.handle",
+        "JsonHandler.handle",
+        "XmlHandler.handle"
+      ],
+      "mustExecute": []
+    },
+    {
+      "task": "FindCallees",
+      "symbol": "invokeAlias",
+      "declaration": "src/dispatch.ts:21",
+      "mayExecute": [
+        "JsonHandler",
+        "JsonHandler.handle"
+      ],
+      "mustExecute": [
+        "JsonHandler.handle"
+      ]
+    },
+    {
+      "task": "FindCallees",
+      "symbol": "invokeUnrelated",
+      "declaration": "src/dispatch.ts:27",
+      "mayExecute": [
+        "Unrelated",
+        "Unrelated.handle"
+      ],
+      "mustExecute": [
+        "Unrelated.handle"
+      ]
+    },
+    {
+      "task": "FindCallees",
+      "symbol": "invokeInherited",
+      "declaration": "src/dispatch.ts:33",
+      "mayExecute": [
+        "JsonHandler",
+        "BaseHandler.log"
+      ],
+      "mustExecute": [
+        "BaseHandler.log"
+      ]
+    },
+    {
+      "task": "FindCallees",
+      "symbol": "passesCallback",
+      "declaration": "src/indirect.ts:24",
+      "$comment": "the call inside the arrow callback must be attributed to the enclosing named function",
+      "mayExecute": [
+        "JsonHandler",
+        "viaCallback",
+        "JsonHandler.handle"
+      ],
+      "mustExecute": [
+        "viaCallback",
+        "JsonHandler.handle"
+      ]
+    },
+    {
+      "task": "FindCallees",
+      "symbol": "viaComputedAccess",
+      "declaration": "src/indirect.ts:35",
+      "$comment": "computed access: no statically established callee, must be an open site",
+      "mayExecute": [],
+      "mustExecute": [],
+      "openSites": [
+        "src/indirect.ts:36"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,362 @@
+{
+  "repo": "repo-a",
+  "system": "conventional",
+  "workload": "cold",
+  "records": [
+    {
+      "type": "FindCallers",
+      "symbol": "execute",
+      "answer": [],
+      "hedged": [],
+      "wallMs": 2473.053869,
+      "analysesRun": 0,
+      "notRun": 0,
+      "uncertainty": null,
+      "sufficient": null,
+      "stopReason": null,
+      "restoredFromCache": 0
+    },
+    {
+      "type": "FindCallees",
+      "symbol": "execute",
+      "answer": [],
+      "hedged": [],
+      "wallMs": 6.782439,
+      "analysesRun": 0,
+      "notRun": 0,
+      "uncertainty": null,
+      "sufficient": null,
+      "stopReason": null,
+      "restoredFromCache": 0
+    },
+    {
+      "type": "ImportImpact",
+      "symbol": "execute",
+      "answer": [],
+      "hedged": [],
+      "wallMs": 0.562416,
+      "analysesRun": 0,
+      "notRun": 0,
+      "uncertainty": null,
+      "sufficient": null,
+      "stopReason": null,
+      "restoredFromCache": 0
+    },
+    {
+      "type": "CallImpact",
+      "symbol": "execute",
+      "answer": [],
+      "hedged": [],
+      "wallMs": 0.116237,
+      "analysesRun": 0,
+      "notRun": 0,
+      "uncertainty": null,
+      "sufficient": null,
+      "stopReason": null,
+      "restoredFromCache": 0
+    },
+    {
+      "type": "TestImpact",
+      "symbol": "execute",
+      "answer": [],
+      "hedged": [],
+      "wallMs": 0.079183,
+      "analysesRun": 0,
+      "notRun": 0,
+      "uncertainty": null,
+      "sufficient": null,
+      "stopReason": null,
+      "restoredFromCache": 0
+    },
+    {
+      "type": "FindCallers",
+      "symbol": "login",
+      "answer": [],
+      "hedged": [],
+      "wallMs": 1382.170079,
+      "analysesRun": 0,
+      "notRun": 0,
+      "uncertainty": null,
+      "sufficient": null,
+      "stopReason": null,
+      "restoredFromCache": 0
+    },
+    {
+      "type": "FindCallees",
+      "symbol": "login",
+      "answer": [
+        "authenticate"
+      ],
+      "hedged": [],
+      "wallMs": 1.758022,
+      "analysesRun": 0,
+      "notRun": 0,
+      "uncertainty": null,
+      "sufficient": null,
+      "stopReason": null,
+      "restoredFromCache": 0
+    },
+    {
+      "type": "ImportImpact",
+      "symbol": "login",
+      "answer": [
+        "src/consumer.ts"
+      ],
+      "hedged": [],
+      "wallMs": 0.480971,
+      "analysesRun": 0,
+      "notRun": 0,
+      "uncertainty": null,
+      "sufficient": null,
+      "stopReason": null,
+      "restoredFromCache": 0
+    },
+    {
+      "type": "CallImpact",
+      "symbol": "login",
+      "answer": [
+        "src/consumer.ts"
+      ],
+      "hedged": [],
+      "wallMs": 0.324103,
+      "analysesRun": 0,
+      "notRun": 0,
+      "uncertainty": null,
+      "sufficient": null,
+      "stopReason": null,
+      "restoredFromCache": 0
+    },
+    {
+      "type": "TestImpact",
+      "symbol": "login",
+      "answer": [],
+      "hedged": [],
+      "wallMs": 0.266593,
+      "analysesRun": 0,
+      "notRun": 0,
+      "uncertainty": null,
+      "sufficient": null,
+      "stopReason": null,
+      "restoredFromCache": 0
+    },
+    {
+      "type": "FindCallers",
+      "symbol": "useAlias",
+      "answer": [],
+      "hedged": [],
+      "wallMs": 1212.398115,
+      "analysesRun": 0,
+      "notRun": 0,
+      "uncertainty": null,
+      "sufficient": null,
+      "stopReason": null,
+      "restoredFromCache": 0
+    },
+    {
+      "type": "FindCallees",
+      "symbol": "useAlias",
+      "answer": [
+        "run"
+      ],
+      "hedged": [],
+      "wallMs": 1.3433,
+      "analysesRun": 0,
+      "notRun": 0,
+      "uncertainty": null,
+      "sufficient": null,
+      "stopReason": null,
+      "restoredFromCache": 0
+    },
+    {
+      "type": "ImportImpact",
+      "symbol": "useAlias",
+      "answer": [
+        "src/consumer.ts"
+      ],
+      "hedged": [],
+      "wallMs": 0.251461,
+      "analysesRun": 0,
+      "notRun": 0,
+      "uncertainty": null,
+      "sufficient": null,
+      "stopReason": null,
+      "restoredFromCache": 0
+    },
+    {
+      "type": "CallImpact",
+      "symbol": "useAlias",
+      "answer": [
+        "src/consumer.ts"
+      ],
+      "hedged": [],
+      "wallMs": 0.146746,
+      "analysesRun": 0,
+      "notRun": 0,
+      "uncertainty": null,
+      "sufficient": null,
+      "stopReason": null,
+      "restoredFromCache": 0
+    },
+    {
+      "type": "TestImpact",
+      "symbol": "useAlias",
+      "answer": [],
+      "hedged": [],
+      "wallMs": 0.21794,
+      "analysesRun": 0,
+      "notRun": 0,
+      "uncertainty": null,
+      "sufficient": null,
+      "stopReason": null,
+      "restoredFromCache": 0
+    },
+    {
+      "type": "FindCallers",
+      "symbol": "useFast",
+      "answer": [],
+      "hedged": [],
+      "wallMs": 2377.496674,
+      "analysesRun": 0,
+      "notRun": 0,
+      "uncertainty": null,
+      "sufficient": null,
+      "stopReason": null,
+      "restoredFromCache": 0
+    },
+    {
+      "type": "FindCallees",
+      "symbol": "useFast",
+      "answer": [
+        "run"
+      ],
+      "hedged": [],
+      "wallMs": 2.304164,
+      "analysesRun": 0,
+      "notRun": 0,
+      "uncertainty": null,
+      "sufficient": null,
+      "stopReason": null,
+      "restoredFromCache": 0
+    },
+    {
+      "type": "ImportImpact",
+      "symbol": "useFast",
+      "answer": [
+        "src/consumer.ts"
+      ],
+      "hedged": [],
+      "wallMs": 1.634339,
+      "analysesRun": 0,
+      "notRun": 0,
+      "uncertainty": null,
+      "sufficient": null,
+      "stopReason": null,
+      "restoredFromCache": 0
+    },
+    {
+      "type": "CallImpact",
+      "symbol": "useFast",
+      "answer": [
+        "src/consumer.ts"
+      ],
+      "hedged": [],
+      "wallMs": 0.422957,
+      "analysesRun": 0,
+      "notRun": 0,
+      "uncertainty": null,
+      "sufficient": null,
+      "stopReason": null,
+      "restoredFromCache": 0
+    },
+    {
+      "type": "TestImpact",
+      "symbol": "useFast",
+      "answer": [],
+      "hedged": [],
+      "wallMs": 0.151988,
+      "analysesRun": 0,
+      "notRun": 0,
+      "uncertainty": null,
+      "sufficient": null,
+      "stopReason": null,
+      "restoredFromCache": 0
+    },
+    {
+      "type": "FindCallers",
+      "symbol": "useSlow",
+      "answer": [],
+      "hedged": [],
+      "wallMs": 1123.615992,
+      "analysesRun": 0,
+      "notRun": 0,
+      "uncertainty": null,
+      "sufficient": null,
+      "stopReason": null,
+      "restoredFromCache": 0
+    },
+    {
+      "type": "FindCallees",
+      "symbol": "useSlow",
+      "answer": [
+        "run"
+      ],
+      "hedged": [],
+      "wallMs": 7.113989,
+      "analysesRun": 0,
+      "notRun": 0,
+      "uncertainty": null,
+      "sufficient": null,
+      "stopReason": null,
+      "restoredFromCache": 0
+    },
+    {
+      "type": "ImportImpact",
+      "symbol": "useSlow",
+      "answer": [
+        "src/consumer.ts"
+      ],
+      "hedged": [],
+      "wallMs": 0.282923,
+      "analysesRun": 0,
+      "notRun": 0,
+      "uncertainty": null,
+      "sufficient": null,
+      "stopReason": null,
+      "restoredFromCache": 0
+    },
+    {
+      "type": "CallImpact",
+      "symbol": "useSlow",
+      "answer": [
+        "src/consumer.ts"
+      ],
+      "hedged": [],
+      "wallMs": 0.143334,
+      "analysesRun": 0,
+      "notRun": 0,
+      "uncertainty": null,
+      "sufficient": null,
+      "stopReason": null,
+      "restoredFromCache": 0
+    },
+    {
+      "type": "TestImpact",
+      "symbol": "useSlow",
+      "answer": [],
+      "hedged": [],
+      "wallMs": 0.081792,
+      "analysesRun": 0,
+      "notRun": 0,
+      "uncertainty": null,
+      "sufficient": null,
+      "stopReason": null,
+      "restoredFromCache": 0
+    }
+  ],
+  "process": {
+    "userCpuMs": 9177.684,
+    "systemCpuMs": 1147.207,
+    "peakRssBytes": 437735424,
+    "wallMsTotal": 8593.199626000001
+  }
+}

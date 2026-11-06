@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agent Mirror Lab — Minimal Experiment Explorer</title>
+  <style>
+    body { font-family: monospace; background: #121212; color: #e0e0e0; margin: 20px; line-height: 1.5; }
+    h1, h2, h3 { color: #00bcd4; }
+    .card { border: 1px solid #333; background: #1e1e1e; padding: 15px; margin-bottom: 15px; border-radius: 4px; }
+    .pipeline { display: flex; gap: 10px; margin-bottom: 20px; font-weight: bold; overflow-x: auto; padding-bottom: 5px; }
+    .step { background: #263238; color: #80deea; padding: 8px 12px; border-radius: 3px; border: 1px solid #37474f; }
+    table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+    th, td { border: 1px solid #333; padding: 8px; text-align: left; }
+    th { background: #263238; color: #80deea; }
+    .badge { padding: 2px 6px; border-radius: 3px; font-size: 0.85em; font-weight: bold; }
+    .badge-real { background: #2e7d32; color: #fff; }
+    .badge-synthetic { background: #e65100; color: #fff; }
+    .badge-pass { background: #1b5e20; color: #81c784; }
+    .badge-fail { background: #b71c1c; color: #ef9a9a; }
+  </style>
+</head>
+<body>
+  <h1>Agent Mirror Experimental Intelligence Lab</h1>
+  <p>Executable Research Ecosystem — Experiment & Trajectory Viewer</p>
+
+  <div class="pipeline">
+    <div class="step">1. Experiment</div>
+    <div class="step">→ 2. Tasks</div>
+    <div class="step">→ 3. Trajectories</div>
+    <div class="step">→ 4. Signals</div>
+    <div class="step">→ 5. Interventions</div>
+    <div class="step">→ 6. Outcomes</div>
+    <div class="step">→ 7. Statistical Evidence</div>
+  </div>
+
+  <div class="card">
+    <h2>Select Experiment</h2>
+    <select id="experimentSelect" style="padding: 8px; background: #263238; color: #fff; border: 1px solid #455a64;">
+      <option value="">-- Select Experiment Result File --</option>
+    </select>
+  </div>
+
+  <div id="experimentDetails" class="card" style="display:none;">
+    <h2>Experiment Overview</h2>
+    <div id="overviewContent"></div>
+  </div>
+
+  <div id="taskResults" class="card" style="display:none;">
+    <h2>Task Results & Trajectories</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Task ID</th>
+          <th>Condition</th>
+          <th>Data Label</th>
+          <th>Outcome</th>
+          <th>Duration</th>
+          <th>Signals</th>
+          <th>Interventions</th>
+        </tr>
+      </thead>
+      <tbody id="taskTableBody"></tbody>
+    </table>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

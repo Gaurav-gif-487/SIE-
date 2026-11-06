@@ -1,0 +1,31 @@
+{
+  "_semantics": {
+    "provenance": "hand-written by inspection of tests/fixtures/repo-decision/src, independent of any engine or oracle output",
+    "findCallees.expected": "in-repo symbols whose body can execute as a direct consequence of invoking the entry function once (one hop; a synchronously-applied higher-order callback counts, a merely registered callback does not)",
+    "findCallees.indirectOnly": "in-repo symbols that execute only via a further hop, or only if some other entry point later fires; NOT counted as expected, listed so a system that reports them can be classified as over-reaching rather than simply wrong",
+    "findCallees.referencedOnly": "symbols mentioned as values but never invoked; reporting these is a precision error",
+    "callImpact.expected": "files whose runtime behaviour can differ if the target's body changes, under CALL semantics (includes the declaring file, excludes pure re-export/reference-only files)",
+    "unresolvable": "true when no sound static answer exists; the correct behaviour is to hedge or return empty, never to assert"
+  },
+  "findCallees": {
+    "entryEasy": { "class": "direct-call", "difficulty": "easy", "expected": ["targetEasy"], "indirectOnly": [], "referencedOnly": [], "unresolvable": false },
+    "entryAlias": { "class": "alias", "difficulty": "medium", "expected": ["targetMedium"], "indirectOnly": [], "referencedOnly": [], "unresolvable": false },
+    "entryHard": { "class": "reexport-alias-inheritance", "difficulty": "hard", "expected": ["DerivedService", "perform"], "indirectOnly": ["targetHard"], "referencedOnly": [], "unresolvable": false },
+    "entryCallback": { "class": "callback", "difficulty": "hard", "expected": ["register"], "indirectOnly": ["targetCallback", "fireAll"], "referencedOnly": ["targetCallback"], "unresolvable": false },
+    "entryHof": { "class": "higher-order-function", "difficulty": "hard", "expected": ["targetHof"], "indirectOnly": [], "referencedOnly": [], "unresolvable": false },
+    "entryConstructor": { "class": "constructor", "difficulty": "medium", "expected": ["Service"], "indirectOnly": ["targetCtor"], "referencedOnly": [], "unresolvable": false },
+    "entryDynamic": { "class": "dynamic-dispatch", "difficulty": "hard", "expected": ["AlphaHandler", "BetaHandler", "handleEvent"], "indirectOnly": ["targetDispatchA", "targetDispatchB"], "referencedOnly": [], "unresolvable": false },
+    "entryReferenceOnly": { "class": "reference-only", "difficulty": "medium", "expected": [], "indirectOnly": [], "referencedOnly": ["targetReferenced"], "unresolvable": false },
+    "entryUnresolvable": { "class": "unresolvable", "difficulty": "unresolvable", "expected": [], "indirectOnly": [], "referencedOnly": [], "unresolvable": true }
+  },
+  "callImpact": {
+    "targetEasy": { "class": "direct-call", "expected": ["src/leaves.ts", "src/entries.ts"] },
+    "targetMedium": { "class": "alias", "expected": ["src/leaves.ts", "src/entries.ts"] },
+    "targetHard": { "class": "reexport-alias-inheritance", "expected": ["src/leaves.ts", "src/inherit.ts", "src/entries.ts"] },
+    "targetCtor": { "class": "constructor", "expected": ["src/leaves.ts", "src/ctor.ts", "src/entries.ts"] },
+    "targetDispatchA": { "class": "dynamic-dispatch", "expected": ["src/leaves.ts", "src/dispatch.ts", "src/entries.ts"] },
+    "targetHof": { "class": "higher-order-function", "expected": ["src/leaves.ts", "src/entries.ts"] },
+    "targetCallback": { "class": "callback", "expected": ["src/leaves.ts", "src/entries.ts", "src/registry.ts"] },
+    "targetReferenced": { "class": "reference-only", "expected": ["src/leaves.ts"] }
+  }
+}

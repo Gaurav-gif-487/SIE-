@@ -1,0 +1,457 @@
+{
+  "repo": "repo-c",
+  "system": "adaptive",
+  "workload": "warm",
+  "records": [
+    {
+      "type": "FindCallers",
+      "symbol": "encode",
+      "answer": [
+        "src/pack.ts:20",
+        "src/pack.ts:25"
+      ],
+      "hedged": [
+        "src/codec.ts:10",
+        "src/pack.ts:10",
+        "src/pack.ts:15",
+        "src/pack.ts:30",
+        "src/pack.ts:41"
+      ],
+      "wallMs": 1988.911015,
+      "analysesRun": 7,
+      "notRun": 2,
+      "uncertainty": 0.7142857142857143,
+      "sufficient": false,
+      "stopReason": "optional-analysis-unavailable:precondition|precondition",
+      "restoredFromCache": 0
+    },
+    {
+      "type": "FindCallees",
+      "symbol": "encode",
+      "answer": [],
+      "hedged": [],
+      "wallMs": 1209.056257,
+      "analysesRun": 0,
+      "notRun": 2,
+      "uncertainty": 1,
+      "sufficient": false,
+      "stopReason": "optional-analysis-unavailable:precondition|precondition",
+      "restoredFromCache": 0
+    },
+    {
+      "type": "ImportImpact",
+      "symbol": "encode",
+      "answer": [
+        "src/codec.ts",
+        "src/pack.ts"
+      ],
+      "hedged": [],
+      "wallMs": 1.829942,
+      "analysesRun": 0,
+      "notRun": 0,
+      "uncertainty": 0,
+      "sufficient": true,
+      "stopReason": "evidence-sufficient-and-residual-risk-acceptable",
+      "restoredFromCache": 0
+    },
+    {
+      "type": "CallImpact",
+      "symbol": "encode",
+      "answer": [
+        "src/codec.ts",
+        "src/pack.ts"
+      ],
+      "hedged": [],
+      "wallMs": 811.117004,
+      "analysesRun": 1,
+      "notRun": 2,
+      "uncertainty": 0.7142857142857143,
+      "sufficient": false,
+      "stopReason": "optional-analysis-unavailable:precondition|precondition",
+      "restoredFromCache": 0
+    },
+    {
+      "type": "TestImpact",
+      "symbol": "encode",
+      "answer": [],
+      "hedged": [],
+      "wallMs": 919.871264,
+      "analysesRun": 0,
+      "notRun": 4,
+      "uncertainty": 1,
+      "sufficient": false,
+      "stopReason": "optional-analysis-unavailable:precondition|precondition|precondition|precondition",
+      "restoredFromCache": 0
+    },
+    {
+      "type": "FindCallers",
+      "symbol": "packDynamic",
+      "answer": [],
+      "hedged": [],
+      "wallMs": 1.550768,
+      "analysesRun": 0,
+      "notRun": 2,
+      "uncertainty": null,
+      "sufficient": false,
+      "stopReason": "optional-analysis-unavailable:precondition|precondition",
+      "restoredFromCache": 0
+    },
+    {
+      "type": "FindCallees",
+      "symbol": "packDynamic",
+      "answer": [],
+      "hedged": [],
+      "wallMs": 554.166219,
+      "analysesRun": 0,
+      "notRun": 2,
+      "uncertainty": 1,
+      "sufficient": false,
+      "stopReason": "optional-analysis-unavailable:precondition|precondition",
+      "restoredFromCache": 0
+    },
+    {
+      "type": "ImportImpact",
+      "symbol": "packDynamic",
+      "answer": [
+        "src/pack.ts"
+      ],
+      "hedged": [],
+      "wallMs": 1.652149,
+      "analysesRun": 0,
+      "notRun": 0,
+      "uncertainty": 0,
+      "sufficient": true,
+      "stopReason": "evidence-sufficient-and-residual-risk-acceptable",
+      "restoredFromCache": 0
+    },
+    {
+      "type": "CallImpact",
+      "symbol": "packDynamic",
+      "answer": [
+        "src/pack.ts"
+      ],
+      "hedged": [],
+      "wallMs": 778.374816,
+      "analysesRun": 0,
+      "notRun": 2,
+      "uncertainty": null,
+      "sufficient": false,
+      "stopReason": "optional-analysis-unavailable:precondition|precondition",
+      "restoredFromCache": 0
+    },
+    {
+      "type": "TestImpact",
+      "symbol": "packDynamic",
+      "answer": [],
+      "hedged": [],
+      "wallMs": 580.776063,
+      "analysesRun": 0,
+      "notRun": 4,
+      "uncertainty": 1,
+      "sufficient": false,
+      "stopReason": "optional-analysis-unavailable:precondition|precondition|precondition|precondition",
+      "restoredFromCache": 0
+    },
+    {
+      "type": "FindCallers",
+      "symbol": "packAll",
+      "answer": [],
+      "hedged": [],
+      "wallMs": 2.048667,
+      "analysesRun": 0,
+      "notRun": 2,
+      "uncertainty": null,
+      "sufficient": false,
+      "stopReason": "optional-analysis-unavailable:precondition|precondition",
+      "restoredFromCache": 0
+    },
+    {
+      "type": "FindCallees",
+      "symbol": "packAll",
+      "answer": [
+        "pick"
+      ],
+      "hedged": [
+        "encode"
+      ],
+      "wallMs": 866.766183,
+      "analysesRun": 0,
+      "notRun": 2,
+      "uncertainty": 0.8,
+      "sufficient": false,
+      "stopReason": "optional-analysis-unavailable:precondition|precondition",
+      "restoredFromCache": 0
+    },
+    {
+      "type": "ImportImpact",
+      "symbol": "packAll",
+      "answer": [
+        "src/pack.ts"
+      ],
+      "hedged": [],
+      "wallMs": 1.484065,
+      "analysesRun": 0,
+      "notRun": 0,
+      "uncertainty": 0,
+      "sufficient": true,
+      "stopReason": "evidence-sufficient-and-residual-risk-acceptable",
+      "restoredFromCache": 0
+    },
+    {
+      "type": "CallImpact",
+      "symbol": "packAll",
+      "answer": [
+        "src/pack.ts"
+      ],
+      "hedged": [],
+      "wallMs": 580.230546,
+      "analysesRun": 0,
+      "notRun": 2,
+      "uncertainty": null,
+      "sufficient": false,
+      "stopReason": "optional-analysis-unavailable:precondition|precondition",
+      "restoredFromCache": 0
+    },
+    {
+      "type": "TestImpact",
+      "symbol": "packAll",
+      "answer": [],
+      "hedged": [],
+      "wallMs": 599.984539,
+      "analysesRun": 0,
+      "notRun": 4,
+      "uncertainty": 1,
+      "sufficient": false,
+      "stopReason": "optional-analysis-unavailable:precondition|precondition|precondition|precondition",
+      "restoredFromCache": 0
+    },
+    {
+      "type": "FindCallers",
+      "symbol": "pick",
+      "answer": [
+        "src/pack.ts:40",
+        "src/pack.ts:9"
+      ],
+      "hedged": [],
+      "wallMs": 3.540028,
+      "analysesRun": 0,
+      "notRun": 0,
+      "uncertainty": 0,
+      "sufficient": true,
+      "stopReason": "evidence-sufficient-and-residual-risk-acceptable",
+      "restoredFromCache": 0
+    },
+    {
+      "type": "FindCallees",
+      "symbol": "pick",
+      "answer": [
+        "Base64Codec",
+        "HexCodec"
+      ],
+      "hedged": [],
+      "wallMs": 1.770386,
+      "analysesRun": 0,
+      "notRun": 0,
+      "uncertainty": 0,
+      "sufficient": true,
+      "stopReason": "evidence-sufficient-and-residual-risk-acceptable",
+      "restoredFromCache": 0
+    },
+    {
+      "type": "ImportImpact",
+      "symbol": "pick",
+      "answer": [
+        "src/pack.ts"
+      ],
+      "hedged": [],
+      "wallMs": 1.581277,
+      "analysesRun": 0,
+      "notRun": 0,
+      "uncertainty": 0,
+      "sufficient": true,
+      "stopReason": "evidence-sufficient-and-residual-risk-acceptable",
+      "restoredFromCache": 0
+    },
+    {
+      "type": "CallImpact",
+      "symbol": "pick",
+      "answer": [
+        "src/pack.ts"
+      ],
+      "hedged": [],
+      "wallMs": 693.256464,
+      "analysesRun": 0,
+      "notRun": 2,
+      "uncertainty": 0,
+      "sufficient": false,
+      "stopReason": "optional-analysis-unavailable:precondition|precondition",
+      "restoredFromCache": 0
+    },
+    {
+      "type": "TestImpact",
+      "symbol": "pick",
+      "answer": [],
+      "hedged": [],
+      "wallMs": 754.102099,
+      "analysesRun": 0,
+      "notRun": 4,
+      "uncertainty": 1,
+      "sufficient": false,
+      "stopReason": "optional-analysis-unavailable:precondition|precondition|precondition|precondition",
+      "restoredFromCache": 0
+    },
+    {
+      "type": "FindCallers",
+      "symbol": "packViaInterface",
+      "answer": [],
+      "hedged": [],
+      "wallMs": 2.797627,
+      "analysesRun": 0,
+      "notRun": 2,
+      "uncertainty": null,
+      "sufficient": false,
+      "stopReason": "optional-analysis-unavailable:precondition|precondition",
+      "restoredFromCache": 0
+    },
+    {
+      "type": "FindCallees",
+      "symbol": "packViaInterface",
+      "answer": [
+        "pick"
+      ],
+      "hedged": [
+        "encode"
+      ],
+      "wallMs": 12.565233,
+      "analysesRun": 0,
+      "notRun": 2,
+      "uncertainty": 0.75,
+      "sufficient": false,
+      "stopReason": "optional-analysis-unavailable:precondition|precondition",
+      "restoredFromCache": 0
+    },
+    {
+      "type": "ImportImpact",
+      "symbol": "packViaInterface",
+      "answer": [
+        "src/pack.ts"
+      ],
+      "hedged": [],
+      "wallMs": 1.439576,
+      "analysesRun": 0,
+      "notRun": 0,
+      "uncertainty": 0,
+      "sufficient": true,
+      "stopReason": "evidence-sufficient-and-residual-risk-acceptable",
+      "restoredFromCache": 0
+    },
+    {
+      "type": "CallImpact",
+      "symbol": "packViaInterface",
+      "answer": [
+        "src/pack.ts"
+      ],
+      "hedged": [],
+      "wallMs": 682.88849,
+      "analysesRun": 0,
+      "notRun": 2,
+      "uncertainty": null,
+      "sufficient": false,
+      "stopReason": "optional-analysis-unavailable:precondition|precondition",
+      "restoredFromCache": 0
+    },
+    {
+      "type": "TestImpact",
+      "symbol": "packViaInterface",
+      "answer": [],
+      "hedged": [],
+      "wallMs": 546.734954,
+      "analysesRun": 0,
+      "notRun": 4,
+      "uncertainty": 1,
+      "sufficient": false,
+      "stopReason": "optional-analysis-unavailable:precondition|precondition|precondition|precondition",
+      "restoredFromCache": 0
+    },
+    {
+      "type": "FindCallers",
+      "symbol": "roundTrip",
+      "answer": [],
+      "hedged": [],
+      "wallMs": 2.596113,
+      "analysesRun": 0,
+      "notRun": 2,
+      "uncertainty": null,
+      "sufficient": false,
+      "stopReason": "optional-analysis-unavailable:precondition|precondition",
+      "restoredFromCache": 0
+    },
+    {
+      "type": "FindCallees",
+      "symbol": "roundTrip",
+      "answer": [],
+      "hedged": [
+        "decode",
+        "encode"
+      ],
+      "wallMs": 1.654063,
+      "analysesRun": 0,
+      "notRun": 2,
+      "uncertainty": 1,
+      "sufficient": false,
+      "stopReason": "optional-analysis-unavailable:precondition|precondition",
+      "restoredFromCache": 0
+    },
+    {
+      "type": "ImportImpact",
+      "symbol": "roundTrip",
+      "answer": [
+        "src/codec.ts",
+        "src/pack.ts"
+      ],
+      "hedged": [],
+      "wallMs": 1.27485,
+      "analysesRun": 0,
+      "notRun": 0,
+      "uncertainty": 0,
+      "sufficient": true,
+      "stopReason": "evidence-sufficient-and-residual-risk-acceptable",
+      "restoredFromCache": 0
+    },
+    {
+      "type": "CallImpact",
+      "symbol": "roundTrip",
+      "answer": [
+        "src/codec.ts"
+      ],
+      "hedged": [],
+      "wallMs": 1.448956,
+      "analysesRun": 0,
+      "notRun": 2,
+      "uncertainty": null,
+      "sufficient": false,
+      "stopReason": "optional-analysis-unavailable:precondition|precondition",
+      "restoredFromCache": 0
+    },
+    {
+      "type": "TestImpact",
+      "symbol": "roundTrip",
+      "answer": [],
+      "hedged": [],
+      "wallMs": 948.399523,
+      "analysesRun": 0,
+      "notRun": 4,
+      "uncertainty": 1,
+      "sufficient": false,
+      "stopReason": "optional-analysis-unavailable:precondition|precondition|precondition|precondition",
+      "restoredFromCache": 0
+    }
+  ],
+  "partial": false,
+  "process": {
+    "userCpuMs": 12703.041,
+    "systemCpuMs": 940.013,
+    "peakRssBytes": 668745728,
+    "wallMsTotal": 12553.869135999998
+  }
+}

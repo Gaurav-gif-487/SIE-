@@ -1,0 +1,751 @@
+{
+  "generatedAt": "2026-08-11T05:36:48.174Z",
+  "rows": [
+    {
+      "symbol": "entryEasy",
+      "taskClass": "direct-call",
+      "config": "verify-off",
+      "wallMs": 958.107724,
+      "analysesRun": 5,
+      "verificationRan": false,
+      "verificationRecord": {
+        "ran": false,
+        "decision": {
+          "level": "not-required",
+          "reasons": [
+            "no unresolved sites, no conflicting evidence, no dynamic dispatch/reflection, residual risk below threshold"
+          ]
+        },
+        "method": null,
+        "challengeCostMs": null,
+        "comparisonOutcome": null,
+        "agreements": null,
+        "disagreements": null
+      },
+      "finalStatus": "RESOLVED",
+      "confirmedOnly": {
+        "answer": [
+          "targetEasy"
+        ],
+        "precision": 1,
+        "recall": 1,
+        "f1": 1
+      },
+      "confirmedPlusPossible": {
+        "answer": [
+          "targetEasy"
+        ],
+        "precision": 1,
+        "recall": 1,
+        "f1": 1
+      },
+      "expected": [
+        "targetEasy"
+      ]
+    },
+    {
+      "symbol": "entryEasy",
+      "taskClass": "direct-call",
+      "config": "verify-on",
+      "wallMs": 586.840168,
+      "analysesRun": 5,
+      "verificationRan": false,
+      "verificationRecord": {
+        "ran": false,
+        "decision": {
+          "level": "not-required",
+          "reasons": [
+            "no unresolved sites, no conflicting evidence, no dynamic dispatch/reflection, residual risk below threshold"
+          ]
+        },
+        "method": null,
+        "challengeCostMs": null,
+        "comparisonOutcome": null,
+        "agreements": null,
+        "disagreements": null
+      },
+      "finalStatus": "RESOLVED",
+      "confirmedOnly": {
+        "answer": [
+          "targetEasy"
+        ],
+        "precision": 1,
+        "recall": 1,
+        "f1": 1
+      },
+      "confirmedPlusPossible": {
+        "answer": [
+          "targetEasy"
+        ],
+        "precision": 1,
+        "recall": 1,
+        "f1": 1
+      },
+      "expected": [
+        "targetEasy"
+      ]
+    },
+    {
+      "symbol": "entryAlias",
+      "taskClass": "alias",
+      "config": "verify-off",
+      "wallMs": 504.896215,
+      "analysesRun": 5,
+      "verificationRan": false,
+      "verificationRecord": {
+        "ran": false,
+        "decision": {
+          "level": "not-required",
+          "reasons": [
+            "no unresolved sites, no conflicting evidence, no dynamic dispatch/reflection, residual risk below threshold"
+          ]
+        },
+        "method": null,
+        "challengeCostMs": null,
+        "comparisonOutcome": null,
+        "agreements": null,
+        "disagreements": null
+      },
+      "finalStatus": "RESOLVED",
+      "confirmedOnly": {
+        "answer": [
+          "targetMedium"
+        ],
+        "precision": 1,
+        "recall": 1,
+        "f1": 1
+      },
+      "confirmedPlusPossible": {
+        "answer": [
+          "targetMedium"
+        ],
+        "precision": 1,
+        "recall": 1,
+        "f1": 1
+      },
+      "expected": [
+        "targetMedium"
+      ]
+    },
+    {
+      "symbol": "entryAlias",
+      "taskClass": "alias",
+      "config": "verify-on",
+      "wallMs": 476.98333,
+      "analysesRun": 5,
+      "verificationRan": false,
+      "verificationRecord": {
+        "ran": false,
+        "decision": {
+          "level": "not-required",
+          "reasons": [
+            "no unresolved sites, no conflicting evidence, no dynamic dispatch/reflection, residual risk below threshold"
+          ]
+        },
+        "method": null,
+        "challengeCostMs": null,
+        "comparisonOutcome": null,
+        "agreements": null,
+        "disagreements": null
+      },
+      "finalStatus": "RESOLVED",
+      "confirmedOnly": {
+        "answer": [
+          "targetMedium"
+        ],
+        "precision": 1,
+        "recall": 1,
+        "f1": 1
+      },
+      "confirmedPlusPossible": {
+        "answer": [
+          "targetMedium"
+        ],
+        "precision": 1,
+        "recall": 1,
+        "f1": 1
+      },
+      "expected": [
+        "targetMedium"
+      ]
+    },
+    {
+      "symbol": "entryHard",
+      "taskClass": "reexport-alias-inheritance",
+      "config": "verify-off",
+      "wallMs": 487.590293,
+      "analysesRun": 5,
+      "verificationRan": false,
+      "verificationRecord": {
+        "ran": false,
+        "decision": {
+          "level": "not-required",
+          "reasons": [
+            "no unresolved sites, no conflicting evidence, no dynamic dispatch/reflection, residual risk below threshold"
+          ]
+        },
+        "method": null,
+        "challengeCostMs": null,
+        "comparisonOutcome": null,
+        "agreements": null,
+        "disagreements": null
+      },
+      "finalStatus": "RESOLVED",
+      "confirmedOnly": {
+        "answer": [
+          "DerivedService",
+          "DerivedService.perform"
+        ],
+        "precision": 0.5,
+        "recall": 0.5,
+        "f1": 0.5
+      },
+      "confirmedPlusPossible": {
+        "answer": [
+          "DerivedService",
+          "DerivedService.perform"
+        ],
+        "precision": 0.5,
+        "recall": 0.5,
+        "f1": 0.5
+      },
+      "expected": [
+        "DerivedService",
+        "perform"
+      ]
+    },
+    {
+      "symbol": "entryHard",
+      "taskClass": "reexport-alias-inheritance",
+      "config": "verify-on",
+      "wallMs": 480.288428,
+      "analysesRun": 5,
+      "verificationRan": false,
+      "verificationRecord": {
+        "ran": false,
+        "decision": {
+          "level": "not-required",
+          "reasons": [
+            "no unresolved sites, no conflicting evidence, no dynamic dispatch/reflection, residual risk below threshold"
+          ]
+        },
+        "method": null,
+        "challengeCostMs": null,
+        "comparisonOutcome": null,
+        "agreements": null,
+        "disagreements": null
+      },
+      "finalStatus": "RESOLVED",
+      "confirmedOnly": {
+        "answer": [
+          "DerivedService",
+          "DerivedService.perform"
+        ],
+        "precision": 0.5,
+        "recall": 0.5,
+        "f1": 0.5
+      },
+      "confirmedPlusPossible": {
+        "answer": [
+          "DerivedService",
+          "DerivedService.perform"
+        ],
+        "precision": 0.5,
+        "recall": 0.5,
+        "f1": 0.5
+      },
+      "expected": [
+        "DerivedService",
+        "perform"
+      ]
+    },
+    {
+      "symbol": "entryCallback",
+      "taskClass": "callback",
+      "config": "verify-off",
+      "wallMs": 494.650735,
+      "analysesRun": 5,
+      "verificationRan": false,
+      "verificationRecord": {
+        "ran": false,
+        "decision": {
+          "level": "not-required",
+          "reasons": [
+            "no unresolved sites, no conflicting evidence, no dynamic dispatch/reflection, residual risk below threshold"
+          ]
+        },
+        "method": null,
+        "challengeCostMs": null,
+        "comparisonOutcome": null,
+        "agreements": null,
+        "disagreements": null
+      },
+      "finalStatus": "RESOLVED",
+      "confirmedOnly": {
+        "answer": [
+          "register"
+        ],
+        "precision": 1,
+        "recall": 1,
+        "f1": 1
+      },
+      "confirmedPlusPossible": {
+        "answer": [
+          "register"
+        ],
+        "precision": 1,
+        "recall": 1,
+        "f1": 1
+      },
+      "expected": [
+        "register"
+      ]
+    },
+    {
+      "symbol": "entryCallback",
+      "taskClass": "callback",
+      "config": "verify-on",
+      "wallMs": 448.114308,
+      "analysesRun": 5,
+      "verificationRan": false,
+      "verificationRecord": {
+        "ran": false,
+        "decision": {
+          "level": "not-required",
+          "reasons": [
+            "no unresolved sites, no conflicting evidence, no dynamic dispatch/reflection, residual risk below threshold"
+          ]
+        },
+        "method": null,
+        "challengeCostMs": null,
+        "comparisonOutcome": null,
+        "agreements": null,
+        "disagreements": null
+      },
+      "finalStatus": "RESOLVED",
+      "confirmedOnly": {
+        "answer": [
+          "register"
+        ],
+        "precision": 1,
+        "recall": 1,
+        "f1": 1
+      },
+      "confirmedPlusPossible": {
+        "answer": [
+          "register"
+        ],
+        "precision": 1,
+        "recall": 1,
+        "f1": 1
+      },
+      "expected": [
+        "register"
+      ]
+    },
+    {
+      "symbol": "entryHof",
+      "taskClass": "higher-order-function",
+      "config": "verify-off",
+      "wallMs": 416.245998,
+      "analysesRun": 6,
+      "verificationRan": false,
+      "verificationRecord": {
+        "ran": false,
+        "decision": {
+          "level": "recommended",
+          "reasons": [
+            "1 call site(s) the primary analysis could not resolve"
+          ]
+        },
+        "method": null,
+        "challengeCostMs": null,
+        "comparisonOutcome": null,
+        "agreements": null,
+        "disagreements": null
+      },
+      "finalStatus": "INSUFFICIENT_EVIDENCE",
+      "confirmedOnly": {
+        "answer": [],
+        "precision": 0,
+        "recall": 0,
+        "f1": 0
+      },
+      "confirmedPlusPossible": {
+        "answer": [],
+        "precision": 0,
+        "recall": 0,
+        "f1": 0
+      },
+      "expected": [
+        "targetHof"
+      ]
+    },
+    {
+      "symbol": "entryHof",
+      "taskClass": "higher-order-function",
+      "config": "verify-on",
+      "wallMs": 923.938228,
+      "analysesRun": 6,
+      "verificationRan": true,
+      "verificationRecord": {
+        "ran": true,
+        "decision": {
+          "level": "recommended",
+          "reasons": [
+            "1 call site(s) the primary analysis could not resolve"
+          ]
+        },
+        "method": "language-service-goto-definition",
+        "challengeCostMs": 476.868252,
+        "comparisonOutcome": "CONTRADICTED",
+        "agreements": null,
+        "disagreements": null
+      },
+      "finalStatus": "CONFLICTING",
+      "confirmedOnly": {
+        "answer": [],
+        "precision": 0,
+        "recall": 0,
+        "f1": 0
+      },
+      "confirmedPlusPossible": {
+        "answer": [],
+        "precision": 0,
+        "recall": 0,
+        "f1": 0
+      },
+      "expected": [
+        "targetHof"
+      ]
+    },
+    {
+      "symbol": "entryConstructor",
+      "taskClass": "constructor",
+      "config": "verify-off",
+      "wallMs": 486.867712,
+      "analysesRun": 5,
+      "verificationRan": false,
+      "verificationRecord": {
+        "ran": false,
+        "decision": {
+          "level": "not-required",
+          "reasons": [
+            "no unresolved sites, no conflicting evidence, no dynamic dispatch/reflection, residual risk below threshold"
+          ]
+        },
+        "method": null,
+        "challengeCostMs": null,
+        "comparisonOutcome": null,
+        "agreements": null,
+        "disagreements": null
+      },
+      "finalStatus": "RESOLVED",
+      "confirmedOnly": {
+        "answer": [
+          "Service"
+        ],
+        "precision": 1,
+        "recall": 1,
+        "f1": 1
+      },
+      "confirmedPlusPossible": {
+        "answer": [
+          "Service"
+        ],
+        "precision": 1,
+        "recall": 1,
+        "f1": 1
+      },
+      "expected": [
+        "Service"
+      ]
+    },
+    {
+      "symbol": "entryConstructor",
+      "taskClass": "constructor",
+      "config": "verify-on",
+      "wallMs": 478.698769,
+      "analysesRun": 5,
+      "verificationRan": false,
+      "verificationRecord": {
+        "ran": false,
+        "decision": {
+          "level": "not-required",
+          "reasons": [
+            "no unresolved sites, no conflicting evidence, no dynamic dispatch/reflection, residual risk below threshold"
+          ]
+        },
+        "method": null,
+        "challengeCostMs": null,
+        "comparisonOutcome": null,
+        "agreements": null,
+        "disagreements": null
+      },
+      "finalStatus": "RESOLVED",
+      "confirmedOnly": {
+        "answer": [
+          "Service"
+        ],
+        "precision": 1,
+        "recall": 1,
+        "f1": 1
+      },
+      "confirmedPlusPossible": {
+        "answer": [
+          "Service"
+        ],
+        "precision": 1,
+        "recall": 1,
+        "f1": 1
+      },
+      "expected": [
+        "Service"
+      ]
+    },
+    {
+      "symbol": "entryDynamic",
+      "taskClass": "dynamic-dispatch",
+      "config": "verify-off",
+      "wallMs": 503.844686,
+      "analysesRun": 6,
+      "verificationRan": false,
+      "verificationRecord": {
+        "ran": false,
+        "decision": {
+          "level": "not-required",
+          "reasons": [
+            "no unresolved sites, no conflicting evidence, no dynamic dispatch/reflection, residual risk below threshold"
+          ]
+        },
+        "method": null,
+        "challengeCostMs": null,
+        "comparisonOutcome": null,
+        "agreements": null,
+        "disagreements": null
+      },
+      "finalStatus": "INSUFFICIENT_EVIDENCE",
+      "confirmedOnly": {
+        "answer": [
+          "AlphaHandler",
+          "BetaHandler"
+        ],
+        "precision": 1,
+        "recall": 0.6666666666666666,
+        "f1": 0.8
+      },
+      "confirmedPlusPossible": {
+        "answer": [
+          "AlphaHandler",
+          "AlphaHandler.handleEvent",
+          "BetaHandler",
+          "BetaHandler.handleEvent",
+          "Handler.handleEvent"
+        ],
+        "precision": 0.4,
+        "recall": 0.6666666666666666,
+        "f1": 0.5
+      },
+      "expected": [
+        "AlphaHandler",
+        "BetaHandler",
+        "handleEvent"
+      ]
+    },
+    {
+      "symbol": "entryDynamic",
+      "taskClass": "dynamic-dispatch",
+      "config": "verify-on",
+      "wallMs": 496.828944,
+      "analysesRun": 6,
+      "verificationRan": false,
+      "verificationRecord": {
+        "ran": false,
+        "decision": {
+          "level": "not-required",
+          "reasons": [
+            "no unresolved sites, no conflicting evidence, no dynamic dispatch/reflection, residual risk below threshold"
+          ]
+        },
+        "method": null,
+        "challengeCostMs": null,
+        "comparisonOutcome": null,
+        "agreements": null,
+        "disagreements": null
+      },
+      "finalStatus": "INSUFFICIENT_EVIDENCE",
+      "confirmedOnly": {
+        "answer": [
+          "AlphaHandler",
+          "BetaHandler"
+        ],
+        "precision": 1,
+        "recall": 0.6666666666666666,
+        "f1": 0.8
+      },
+      "confirmedPlusPossible": {
+        "answer": [
+          "AlphaHandler",
+          "AlphaHandler.handleEvent",
+          "BetaHandler",
+          "BetaHandler.handleEvent",
+          "Handler.handleEvent"
+        ],
+        "precision": 0.4,
+        "recall": 0.6666666666666666,
+        "f1": 0.5
+      },
+      "expected": [
+        "AlphaHandler",
+        "BetaHandler",
+        "handleEvent"
+      ]
+    },
+    {
+      "symbol": "entryReferenceOnly",
+      "taskClass": "reference-only",
+      "config": "verify-off",
+      "wallMs": 519.852729,
+      "analysesRun": 6,
+      "verificationRan": false,
+      "verificationRecord": {
+        "ran": false,
+        "decision": {
+          "level": "not-required",
+          "reasons": [
+            "no unresolved sites, no conflicting evidence, no dynamic dispatch/reflection, residual risk below threshold"
+          ]
+        },
+        "method": null,
+        "challengeCostMs": null,
+        "comparisonOutcome": null,
+        "agreements": null,
+        "disagreements": null
+      },
+      "finalStatus": "INSUFFICIENT_EVIDENCE",
+      "confirmedOnly": {
+        "answer": [],
+        "precision": 1,
+        "recall": 1,
+        "f1": 1
+      },
+      "confirmedPlusPossible": {
+        "answer": [],
+        "precision": 1,
+        "recall": 1,
+        "f1": 1
+      },
+      "expected": []
+    },
+    {
+      "symbol": "entryReferenceOnly",
+      "taskClass": "reference-only",
+      "config": "verify-on",
+      "wallMs": 489.156645,
+      "analysesRun": 6,
+      "verificationRan": false,
+      "verificationRecord": {
+        "ran": false,
+        "decision": {
+          "level": "not-required",
+          "reasons": [
+            "no unresolved sites, no conflicting evidence, no dynamic dispatch/reflection, residual risk below threshold"
+          ]
+        },
+        "method": null,
+        "challengeCostMs": null,
+        "comparisonOutcome": null,
+        "agreements": null,
+        "disagreements": null
+      },
+      "finalStatus": "INSUFFICIENT_EVIDENCE",
+      "confirmedOnly": {
+        "answer": [],
+        "precision": 1,
+        "recall": 1,
+        "f1": 1
+      },
+      "confirmedPlusPossible": {
+        "answer": [],
+        "precision": 1,
+        "recall": 1,
+        "f1": 1
+      },
+      "expected": []
+    },
+    {
+      "symbol": "entryUnresolvable",
+      "taskClass": "unresolvable",
+      "config": "verify-off",
+      "wallMs": 922.389199,
+      "analysesRun": 6,
+      "verificationRan": true,
+      "verificationRecord": {
+        "ran": true,
+        "decision": {
+          "level": "required",
+          "reasons": [
+            "a call site depends on dynamic dispatch that could not be statically pinned",
+            "residual risk sites (1) at/above the required threshold (1)"
+          ]
+        },
+        "method": "language-service-goto-definition",
+        "challengeCostMs": 449.560506,
+        "comparisonOutcome": "UNVERIFIED",
+        "agreements": null,
+        "disagreements": null
+      },
+      "finalStatus": "HIGH_RESIDUAL_RISK",
+      "confirmedOnly": {
+        "answer": [],
+        "precision": 1,
+        "recall": 1,
+        "f1": 1
+      },
+      "confirmedPlusPossible": {
+        "answer": [],
+        "precision": 1,
+        "recall": 1,
+        "f1": 1
+      },
+      "expected": []
+    },
+    {
+      "symbol": "entryUnresolvable",
+      "taskClass": "unresolvable",
+      "config": "verify-on",
+      "wallMs": 845.921646,
+      "analysesRun": 6,
+      "verificationRan": true,
+      "verificationRecord": {
+        "ran": true,
+        "decision": {
+          "level": "required",
+          "reasons": [
+            "a call site depends on dynamic dispatch that could not be statically pinned",
+            "residual risk sites (1) at/above the required threshold (1)"
+          ]
+        },
+        "method": "language-service-goto-definition",
+        "challengeCostMs": 407.016058,
+        "comparisonOutcome": "UNVERIFIED",
+        "agreements": null,
+        "disagreements": null
+      },
+      "finalStatus": "HIGH_RESIDUAL_RISK",
+      "confirmedOnly": {
+        "answer": [],
+        "precision": 1,
+        "recall": 1,
+        "f1": 1
+      },
+      "confirmedPlusPossible": {
+        "answer": [],
+        "precision": 1,
+        "recall": 1,
+        "f1": 1
+      },
+      "expected": []
+    }
+  ]
+}

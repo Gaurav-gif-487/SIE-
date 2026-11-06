@@ -1,0 +1,473 @@
+{
+  "repo": "repo-b",
+  "system": "required-only",
+  "workload": "cold",
+  "records": [
+    {
+      "type": "FindCallers",
+      "symbol": "handle",
+      "answer": [
+        "src/default-export.ts:5",
+        "src/dispatch.ts:22",
+        "src/dispatch.ts:28",
+        "src/indirect.ts:26",
+        "src/indirect.ts:31"
+      ],
+      "hedged": [
+        "src/dispatch.ts:11",
+        "src/dispatch.ts:16",
+        "src/dispatch.ts:6",
+        "src/indirect.ts:16",
+        "src/indirect.ts:41"
+      ],
+      "wallMs": 3143.104359,
+      "analysesRun": 5,
+      "notRun": 4,
+      "uncertainty": 0.5454545454545454,
+      "sufficient": false,
+      "stopReason": "optional-analysis-unavailable:|precondition|precondition|",
+      "restoredFromCache": 0
+    },
+    {
+      "type": "FindCallees",
+      "symbol": "handle",
+      "answer": [],
+      "hedged": [],
+      "wallMs": 721.31206,
+      "analysesRun": 5,
+      "notRun": 3,
+      "uncertainty": null,
+      "sufficient": false,
+      "stopReason": "optional-analysis-unavailable:|precondition|precondition",
+      "restoredFromCache": 0
+    },
+    {
+      "type": "ImportImpact",
+      "symbol": "handle",
+      "answer": [
+        "src/barrel.ts",
+        "src/default-export.ts",
+        "src/dispatch.ts",
+        "src/handlers.ts",
+        "src/indirect.ts",
+        "src/types.ts"
+      ],
+      "hedged": [],
+      "wallMs": 635.880279,
+      "analysesRun": 2,
+      "notRun": 0,
+      "uncertainty": 0,
+      "sufficient": true,
+      "stopReason": "evidence-sufficient-and-residual-risk-acceptable",
+      "restoredFromCache": 0
+    },
+    {
+      "type": "CallImpact",
+      "symbol": "handle",
+      "answer": [
+        "src/default-export.ts",
+        "src/dispatch.ts",
+        "src/handlers.ts",
+        "src/indirect.ts",
+        "src/types.ts"
+      ],
+      "hedged": [],
+      "wallMs": 1525.377843,
+      "analysesRun": 6,
+      "notRun": 4,
+      "uncertainty": 0.46153846153846156,
+      "sufficient": false,
+      "stopReason": "optional-analysis-unavailable:||precondition|precondition",
+      "restoredFromCache": 0
+    },
+    {
+      "type": "TestImpact",
+      "symbol": "handle",
+      "answer": [],
+      "hedged": [],
+      "wallMs": 1246.714613,
+      "analysesRun": 4,
+      "notRun": 4,
+      "uncertainty": 1,
+      "sufficient": false,
+      "stopReason": "optional-analysis-unavailable:precondition|precondition|precondition|precondition",
+      "restoredFromCache": 0
+    },
+    {
+      "type": "FindCallers",
+      "symbol": "viaMethodReference",
+      "answer": [],
+      "hedged": [],
+      "wallMs": 768.369092,
+      "analysesRun": 5,
+      "notRun": 4,
+      "uncertainty": null,
+      "sufficient": false,
+      "stopReason": "optional-analysis-unavailable:|precondition|precondition|",
+      "restoredFromCache": 0
+    },
+    {
+      "type": "FindCallees",
+      "symbol": "viaMethodReference",
+      "answer": [
+        "JsonHandler",
+        "fn"
+      ],
+      "hedged": [],
+      "wallMs": 1363.205776,
+      "analysesRun": 5,
+      "notRun": 3,
+      "uncertainty": 0.3333333333333333,
+      "sufficient": false,
+      "stopReason": "optional-analysis-unavailable:|precondition|precondition",
+      "restoredFromCache": 0
+    },
+    {
+      "type": "ImportImpact",
+      "symbol": "viaMethodReference",
+      "answer": [
+        "src/indirect.ts"
+      ],
+      "hedged": [],
+      "wallMs": 541.352301,
+      "analysesRun": 2,
+      "notRun": 0,
+      "uncertainty": 0,
+      "sufficient": true,
+      "stopReason": "evidence-sufficient-and-residual-risk-acceptable",
+      "restoredFromCache": 0
+    },
+    {
+      "type": "CallImpact",
+      "symbol": "viaMethodReference",
+      "answer": [
+        "src/indirect.ts"
+      ],
+      "hedged": [],
+      "wallMs": 1362.163383,
+      "analysesRun": 6,
+      "notRun": 4,
+      "uncertainty": null,
+      "sufficient": false,
+      "stopReason": "optional-analysis-unavailable:||precondition|precondition",
+      "restoredFromCache": 0
+    },
+    {
+      "type": "TestImpact",
+      "symbol": "viaMethodReference",
+      "answer": [],
+      "hedged": [],
+      "wallMs": 1198.79462,
+      "analysesRun": 4,
+      "notRun": 4,
+      "uncertainty": 1,
+      "sufficient": false,
+      "stopReason": "optional-analysis-unavailable:precondition|precondition|precondition|precondition",
+      "restoredFromCache": 0
+    },
+    {
+      "type": "FindCallers",
+      "symbol": "viaFunctionVariable",
+      "answer": [],
+      "hedged": [],
+      "wallMs": 568.04678,
+      "analysesRun": 5,
+      "notRun": 4,
+      "uncertainty": null,
+      "sufficient": false,
+      "stopReason": "optional-analysis-unavailable:|precondition|precondition|",
+      "restoredFromCache": 0
+    },
+    {
+      "type": "FindCallees",
+      "symbol": "viaFunctionVariable",
+      "answer": [
+        "fn"
+      ],
+      "hedged": [
+        "handle"
+      ],
+      "wallMs": 547.911752,
+      "analysesRun": 5,
+      "notRun": 3,
+      "uncertainty": 0.75,
+      "sufficient": false,
+      "stopReason": "optional-analysis-unavailable:|precondition|precondition",
+      "restoredFromCache": 0
+    },
+    {
+      "type": "ImportImpact",
+      "symbol": "viaFunctionVariable",
+      "answer": [
+        "src/indirect.ts"
+      ],
+      "hedged": [],
+      "wallMs": 517.411662,
+      "analysesRun": 2,
+      "notRun": 0,
+      "uncertainty": 0,
+      "sufficient": true,
+      "stopReason": "evidence-sufficient-and-residual-risk-acceptable",
+      "restoredFromCache": 0
+    },
+    {
+      "type": "CallImpact",
+      "symbol": "viaFunctionVariable",
+      "answer": [
+        "src/indirect.ts"
+      ],
+      "hedged": [],
+      "wallMs": 1041.493422,
+      "analysesRun": 6,
+      "notRun": 4,
+      "uncertainty": null,
+      "sufficient": false,
+      "stopReason": "optional-analysis-unavailable:||precondition|precondition",
+      "restoredFromCache": 0
+    },
+    {
+      "type": "TestImpact",
+      "symbol": "viaFunctionVariable",
+      "answer": [],
+      "hedged": [],
+      "wallMs": 1208.078145,
+      "analysesRun": 4,
+      "notRun": 4,
+      "uncertainty": 1,
+      "sufficient": false,
+      "stopReason": "optional-analysis-unavailable:precondition|precondition|precondition|precondition",
+      "restoredFromCache": 0
+    },
+    {
+      "type": "FindCallers",
+      "symbol": "passesCallback",
+      "answer": [],
+      "hedged": [],
+      "wallMs": 699.724491,
+      "analysesRun": 5,
+      "notRun": 4,
+      "uncertainty": null,
+      "sufficient": false,
+      "stopReason": "optional-analysis-unavailable:|precondition|precondition|",
+      "restoredFromCache": 0
+    },
+    {
+      "type": "FindCallees",
+      "symbol": "passesCallback",
+      "answer": [
+        "JsonHandler",
+        "handle",
+        "viaCallback"
+      ],
+      "hedged": [],
+      "wallMs": 532.006231,
+      "analysesRun": 5,
+      "notRun": 0,
+      "uncertainty": 0,
+      "sufficient": true,
+      "stopReason": "evidence-sufficient-and-residual-risk-acceptable",
+      "restoredFromCache": 0
+    },
+    {
+      "type": "ImportImpact",
+      "symbol": "passesCallback",
+      "answer": [
+        "src/indirect.ts"
+      ],
+      "hedged": [],
+      "wallMs": 477.226267,
+      "analysesRun": 2,
+      "notRun": 0,
+      "uncertainty": 0,
+      "sufficient": true,
+      "stopReason": "evidence-sufficient-and-residual-risk-acceptable",
+      "restoredFromCache": 0
+    },
+    {
+      "type": "CallImpact",
+      "symbol": "passesCallback",
+      "answer": [
+        "src/indirect.ts"
+      ],
+      "hedged": [],
+      "wallMs": 1233.155747,
+      "analysesRun": 6,
+      "notRun": 4,
+      "uncertainty": null,
+      "sufficient": false,
+      "stopReason": "optional-analysis-unavailable:||precondition|precondition",
+      "restoredFromCache": 0
+    },
+    {
+      "type": "TestImpact",
+      "symbol": "passesCallback",
+      "answer": [],
+      "hedged": [],
+      "wallMs": 1272.873078,
+      "analysesRun": 4,
+      "notRun": 4,
+      "uncertainty": 1,
+      "sufficient": false,
+      "stopReason": "optional-analysis-unavailable:precondition|precondition|precondition|precondition",
+      "restoredFromCache": 0
+    },
+    {
+      "type": "FindCallers",
+      "symbol": "makeHandler",
+      "answer": [
+        "src/indirect.ts:41"
+      ],
+      "hedged": [],
+      "wallMs": 507.708481,
+      "analysesRun": 5,
+      "notRun": 0,
+      "uncertainty": 0,
+      "sufficient": true,
+      "stopReason": "evidence-sufficient-and-residual-risk-acceptable",
+      "restoredFromCache": 0
+    },
+    {
+      "type": "FindCallees",
+      "symbol": "makeHandler",
+      "answer": [
+        "JsonHandler",
+        "XmlHandler"
+      ],
+      "hedged": [],
+      "wallMs": 604.153297,
+      "analysesRun": 5,
+      "notRun": 0,
+      "uncertainty": 0,
+      "sufficient": true,
+      "stopReason": "evidence-sufficient-and-residual-risk-acceptable",
+      "restoredFromCache": 0
+    },
+    {
+      "type": "ImportImpact",
+      "symbol": "makeHandler",
+      "answer": [
+        "src/barrel.ts",
+        "src/default-export.ts",
+        "src/dispatch.ts",
+        "src/handlers.ts",
+        "src/indirect.ts"
+      ],
+      "hedged": [],
+      "wallMs": 652.460927,
+      "analysesRun": 2,
+      "notRun": 0,
+      "uncertainty": 0,
+      "sufficient": true,
+      "stopReason": "evidence-sufficient-and-residual-risk-acceptable",
+      "restoredFromCache": 0
+    },
+    {
+      "type": "CallImpact",
+      "symbol": "makeHandler",
+      "answer": [
+        "src/handlers.ts",
+        "src/indirect.ts"
+      ],
+      "hedged": [],
+      "wallMs": 1384.638703,
+      "analysesRun": 6,
+      "notRun": 4,
+      "uncertainty": 0,
+      "sufficient": false,
+      "stopReason": "optional-analysis-unavailable:||precondition|precondition",
+      "restoredFromCache": 0
+    },
+    {
+      "type": "TestImpact",
+      "symbol": "makeHandler",
+      "answer": [],
+      "hedged": [],
+      "wallMs": 977.178918,
+      "analysesRun": 4,
+      "notRun": 4,
+      "uncertainty": 1,
+      "sufficient": false,
+      "stopReason": "optional-analysis-unavailable:precondition|precondition|precondition|precondition",
+      "restoredFromCache": 0
+    },
+    {
+      "type": "FindCallers",
+      "symbol": "invokeUnrelated",
+      "answer": [],
+      "hedged": [],
+      "wallMs": 587.703556,
+      "analysesRun": 5,
+      "notRun": 4,
+      "uncertainty": null,
+      "sufficient": false,
+      "stopReason": "optional-analysis-unavailable:|precondition|precondition|",
+      "restoredFromCache": 0
+    },
+    {
+      "type": "FindCallees",
+      "symbol": "invokeUnrelated",
+      "answer": [
+        "Unrelated",
+        "handle"
+      ],
+      "hedged": [],
+      "wallMs": 595.201063,
+      "analysesRun": 5,
+      "notRun": 0,
+      "uncertainty": 0,
+      "sufficient": true,
+      "stopReason": "evidence-sufficient-and-residual-risk-acceptable",
+      "restoredFromCache": 0
+    },
+    {
+      "type": "ImportImpact",
+      "symbol": "invokeUnrelated",
+      "answer": [
+        "src/dispatch.ts"
+      ],
+      "hedged": [],
+      "wallMs": 581.577176,
+      "analysesRun": 2,
+      "notRun": 0,
+      "uncertainty": 0,
+      "sufficient": true,
+      "stopReason": "evidence-sufficient-and-residual-risk-acceptable",
+      "restoredFromCache": 0
+    },
+    {
+      "type": "CallImpact",
+      "symbol": "invokeUnrelated",
+      "answer": [
+        "src/dispatch.ts"
+      ],
+      "hedged": [],
+      "wallMs": 556.065562,
+      "analysesRun": 6,
+      "notRun": 4,
+      "uncertainty": null,
+      "sufficient": false,
+      "stopReason": "optional-analysis-unavailable:||precondition|precondition",
+      "restoredFromCache": 0
+    },
+    {
+      "type": "TestImpact",
+      "symbol": "invokeUnrelated",
+      "answer": [],
+      "hedged": [],
+      "wallMs": 1360.88095,
+      "analysesRun": 4,
+      "notRun": 4,
+      "uncertainty": 1,
+      "sufficient": false,
+      "stopReason": "optional-analysis-unavailable:precondition|precondition|precondition|precondition",
+      "restoredFromCache": 0
+    }
+  ],
+  "partial": false,
+  "process": {
+    "userCpuMs": 28130.45,
+    "systemCpuMs": 966.299,
+    "peakRssBytes": 703471616,
+    "wallMsTotal": 28411.77053400001
+  }
+}

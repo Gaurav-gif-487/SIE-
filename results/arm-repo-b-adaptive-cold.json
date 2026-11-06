@@ -1,0 +1,163 @@
+{
+  "repo": "repo-b",
+  "system": "adaptive",
+  "workload": "cold",
+  "records": [
+    {
+      "type": "FindCallers",
+      "symbol": "handle",
+      "answer": [
+        "src/default-export.ts:5",
+        "src/dispatch.ts:22",
+        "src/dispatch.ts:28",
+        "src/indirect.ts:26",
+        "src/indirect.ts:31"
+      ],
+      "hedged": [
+        "src/dispatch.ts:11",
+        "src/dispatch.ts:16",
+        "src/dispatch.ts:6",
+        "src/indirect.ts:16",
+        "src/indirect.ts:41"
+      ],
+      "wallMs": 2947.470682,
+      "analysesRun": 7,
+      "notRun": 2,
+      "uncertainty": 0.5454545454545454,
+      "sufficient": false,
+      "stopReason": "optional-analysis-unavailable:precondition|precondition",
+      "restoredFromCache": 0
+    },
+    {
+      "type": "FindCallees",
+      "symbol": "handle",
+      "answer": [],
+      "hedged": [],
+      "wallMs": 823.223649,
+      "analysesRun": 6,
+      "notRun": 2,
+      "uncertainty": null,
+      "sufficient": false,
+      "stopReason": "optional-analysis-unavailable:precondition|precondition",
+      "restoredFromCache": 0
+    },
+    {
+      "type": "ImportImpact",
+      "symbol": "handle",
+      "answer": [
+        "src/barrel.ts",
+        "src/default-export.ts",
+        "src/dispatch.ts",
+        "src/handlers.ts",
+        "src/indirect.ts",
+        "src/types.ts"
+      ],
+      "hedged": [],
+      "wallMs": 645.536067,
+      "analysesRun": 2,
+      "notRun": 0,
+      "uncertainty": 0,
+      "sufficient": true,
+      "stopReason": "evidence-sufficient-and-residual-risk-acceptable",
+      "restoredFromCache": 0
+    },
+    {
+      "type": "CallImpact",
+      "symbol": "handle",
+      "answer": [
+        "src/default-export.ts",
+        "src/dispatch.ts",
+        "src/handlers.ts",
+        "src/indirect.ts",
+        "src/types.ts"
+      ],
+      "hedged": [],
+      "wallMs": 1598.371641,
+      "analysesRun": 8,
+      "notRun": 2,
+      "uncertainty": 0.46153846153846156,
+      "sufficient": false,
+      "stopReason": "optional-analysis-unavailable:precondition|precondition",
+      "restoredFromCache": 0
+    },
+    {
+      "type": "TestImpact",
+      "symbol": "handle",
+      "answer": [],
+      "hedged": [],
+      "wallMs": 1448.98745,
+      "analysesRun": 4,
+      "notRun": 4,
+      "uncertainty": 1,
+      "sufficient": false,
+      "stopReason": "optional-analysis-unavailable:precondition|precondition|precondition|precondition",
+      "restoredFromCache": 0
+    },
+    {
+      "type": "FindCallers",
+      "symbol": "viaMethodReference",
+      "answer": [],
+      "hedged": [],
+      "wallMs": 557.545457,
+      "analysesRun": 7,
+      "notRun": 2,
+      "uncertainty": null,
+      "sufficient": false,
+      "stopReason": "optional-analysis-unavailable:precondition|precondition",
+      "restoredFromCache": 0
+    },
+    {
+      "type": "FindCallees",
+      "symbol": "viaMethodReference",
+      "answer": [
+        "JsonHandler",
+        "fn"
+      ],
+      "hedged": [],
+      "wallMs": 1369.443898,
+      "analysesRun": 6,
+      "notRun": 2,
+      "uncertainty": 0.3333333333333333,
+      "sufficient": false,
+      "stopReason": "optional-analysis-unavailable:precondition|precondition",
+      "restoredFromCache": 0
+    },
+    {
+      "type": "ImportImpact",
+      "symbol": "viaMethodReference",
+      "answer": [
+        "src/indirect.ts"
+      ],
+      "hedged": [],
+      "wallMs": 519.424908,
+      "analysesRun": 2,
+      "notRun": 0,
+      "uncertainty": 0,
+      "sufficient": true,
+      "stopReason": "evidence-sufficient-and-residual-risk-acceptable",
+      "restoredFromCache": 0
+    },
+    {
+      "type": "CallImpact",
+      "symbol": "viaMethodReference",
+      "answer": [
+        "src/indirect.ts"
+      ],
+      "hedged": [],
+      "wallMs": 1373.164128,
+      "analysesRun": 8,
+      "notRun": 2,
+      "uncertainty": null,
+      "sufficient": false,
+      "stopReason": "optional-analysis-unavailable:precondition|precondition",
+      "restoredFromCache": 0
+    }
+  ],
+  "partial": true,
+  "process": {
+    "userCpuMs": 11482.179,
+    "systemCpuMs": 594.562,
+    "peakRssBytes": 636305408,
+    "wallMsTotal": 11283.16788
+  }
+}

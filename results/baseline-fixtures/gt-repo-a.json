@@ -1,0 +1,214 @@
+{
+  "repo": "repo-a",
+  "tasks": [
+    {
+      "repo": "repo-a",
+      "type": "FindCallers",
+      "symbol": "execute"
+    },
+    {
+      "repo": "repo-a",
+      "type": "FindCallees",
+      "symbol": "execute"
+    },
+    {
+      "repo": "repo-a",
+      "type": "ImportImpact",
+      "symbol": "execute"
+    },
+    {
+      "repo": "repo-a",
+      "type": "CallImpact",
+      "symbol": "execute"
+    },
+    {
+      "repo": "repo-a",
+      "type": "TestImpact",
+      "symbol": "execute"
+    },
+    {
+      "repo": "repo-a",
+      "type": "FindCallers",
+      "symbol": "login",
+      "declaration": "src/consumer.ts:23"
+    },
+    {
+      "repo": "repo-a",
+      "type": "FindCallees",
+      "symbol": "login",
+      "declaration": "src/consumer.ts:23"
+    },
+    {
+      "repo": "repo-a",
+      "type": "ImportImpact",
+      "symbol": "login",
+      "declaration": "src/consumer.ts:23"
+    },
+    {
+      "repo": "repo-a",
+      "type": "CallImpact",
+      "symbol": "login",
+      "declaration": "src/consumer.ts:23"
+    },
+    {
+      "repo": "repo-a",
+      "type": "TestImpact",
+      "symbol": "login",
+      "declaration": "src/consumer.ts:23"
+    },
+    {
+      "repo": "repo-a",
+      "type": "FindCallers",
+      "symbol": "useAlias",
+      "declaration": "src/consumer.ts:14"
+    },
+    {
+      "repo": "repo-a",
+      "type": "FindCallees",
+      "symbol": "useAlias",
+      "declaration": "src/consumer.ts:14"
+    },
+    {
+      "repo": "repo-a",
+      "type": "ImportImpact",
+      "symbol": "useAlias",
+      "declaration": "src/consumer.ts:14"
+    },
+    {
+      "repo": "repo-a",
+      "type": "CallImpact",
+      "symbol": "useAlias",
+      "declaration": "src/consumer.ts:14"
+    },
+    {
+      "repo": "repo-a",
+      "type": "TestImpact",
+      "symbol": "useAlias",
+      "declaration": "src/consumer.ts:14"
+    },
+    {
+      "repo": "repo-a",
+      "type": "FindCallers",
+      "symbol": "useFast",
+      "declaration": "src/consumer.ts:4"
+    },
+    {
+      "repo": "repo-a",
+      "type": "FindCallees",
+      "symbol": "useFast",
+      "declaration": "src/consumer.ts:4"
+    },
+    {
+      "repo": "repo-a",
+      "type": "ImportImpact",
+      "symbol": "useFast",
+      "declaration": "src/consumer.ts:4"
+    },
+    {
+      "repo": "repo-a",
+      "type": "CallImpact",
+      "symbol": "useFast",
+      "declaration": "src/consumer.ts:4"
+    },
+    {
+      "repo": "repo-a",
+      "type": "TestImpact",
+      "symbol": "useFast",
+      "declaration": "src/consumer.ts:4"
+    },
+    {
+      "repo": "repo-a",
+      "type": "FindCallers",
+      "symbol": "useSlow",
+      "declaration": "src/consumer.ts:9"
+    },
+    {
+      "repo": "repo-a",
+      "type": "FindCallees",
+      "symbol": "useSlow",
+      "declaration": "src/consumer.ts:9"
+    },
+    {
+      "repo": "repo-a",
+      "type": "ImportImpact",
+      "symbol": "useSlow",
+      "declaration": "src/consumer.ts:9"
+    },
+    {
+      "repo": "repo-a",
+      "type": "CallImpact",
+      "symbol": "useSlow",
+      "declaration": "src/consumer.ts:9"
+    },
+    {
+      "repo": "repo-a",
+      "type": "TestImpact",
+      "symbol": "useSlow",
+      "declaration": "src/consumer.ts:9"
+    }
+  ],
+  "gt": {
+    "FindCallers:execute": [],
+    "FindCallees:execute": [],
+    "ImportImpact:execute": [],
+    "CallImpact:execute": [],
+    "TestImpact:execute": [],
+    "FindCallers:login": [],
+    "FindCallees:login": [
+      "AdminService",
+      "authenticate"
+    ],
+    "ImportImpact:login": [
+      "src/consumer.ts"
+    ],
+    "CallImpact:login": [
+      "src/consumer.ts"
+    ],
+    "TestImpact:login": [],
+    "FindCallers:useAlias": [],
+    "FindCallees:useAlias": [
+      "FastRunner",
+      "run"
+    ],
+    "ImportImpact:useAlias": [
+      "src/consumer.ts"
+    ],
+    "CallImpact:useAlias": [
+      "src/consumer.ts"
+    ],
+    "TestImpact:useAlias": [],
+    "FindCallers:useFast": [],
+    "FindCallees:useFast": [
+      "FastRunner",
+      "run"
+    ],
+    "ImportImpact:useFast": [
+      "src/consumer.ts"
+    ],
+    "CallImpact:useFast": [
+      "src/consumer.ts"
+    ],
+    "TestImpact:useFast": [],
+    "FindCallers:useSlow": [],
+    "FindCallees:useSlow": [
+      "SlowRunner",
+      "run"
+    ],
+    "ImportImpact:useSlow": [
+      "src/consumer.ts"
+    ],
+    "CallImpact:useSlow": [
+      "src/consumer.ts"
+    ],
+    "TestImpact:useSlow": []
+  },
+  "provenance": {
+    "oracleVersionHash": "8dc68c06f0f089fff0057df01df26e1d77c8d2e65dd16ea2b2800b052b6ede54",
+    "repositorySnapshot": {
+      "sha": null,
+      "files": 3,
+      "loc": 66
+    },
+    "generatedAt": "2026-08-10T00:31:07.343Z"
+  }
+}

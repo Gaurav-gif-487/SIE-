@@ -1,0 +1,233 @@
+{
+  "generatedAt": "2026-08-11T05:35:32.588Z",
+  "repo": "repo-collide",
+  "results": [
+    {
+      "name": "foo",
+      "declFile": "src/fileA.ts",
+      "note": "fileA.foo; reached via direct import and via the barrel alias fooFromA",
+      "expected": [
+        "src/barrel-users.ts",
+        "src/callersA.ts",
+        "src/fileA.ts"
+      ],
+      "nameKeyedOracle": [
+        "src/barrel-users.ts",
+        "src/callersA.ts",
+        "src/callersB.ts",
+        "src/callersC.ts",
+        "src/fileA.ts",
+        "src/fileB.ts",
+        "src/fileC.ts",
+        "src/nested.ts"
+      ],
+      "nameKeyedCorrect": false,
+      "nameKeyedOverReach": [
+        "src/callersB.ts",
+        "src/callersC.ts",
+        "src/fileB.ts",
+        "src/fileC.ts",
+        "src/nested.ts"
+      ],
+      "identityKeyedOracle": [
+        "src/barrel-users.ts",
+        "src/callersA.ts",
+        "src/fileA.ts"
+      ],
+      "identityKeyedCorrect": true,
+      "identityKeyedOverReach": [],
+      "identityKeyedMissing": []
+    },
+    {
+      "name": "foo",
+      "declFile": "src/fileB.ts",
+      "note": "fileB.foo; the barrel re-exports it as fooFromB but nothing calls that",
+      "expected": [
+        "src/callersB.ts",
+        "src/fileB.ts"
+      ],
+      "nameKeyedOracle": [
+        "src/barrel-users.ts",
+        "src/callersA.ts",
+        "src/callersB.ts",
+        "src/callersC.ts",
+        "src/fileA.ts",
+        "src/fileB.ts",
+        "src/fileC.ts",
+        "src/nested.ts"
+      ],
+      "nameKeyedCorrect": false,
+      "nameKeyedOverReach": [
+        "src/barrel-users.ts",
+        "src/callersA.ts",
+        "src/callersC.ts",
+        "src/fileA.ts",
+        "src/fileC.ts",
+        "src/nested.ts"
+      ],
+      "identityKeyedOracle": [
+        "src/callersB.ts",
+        "src/fileB.ts"
+      ],
+      "identityKeyedCorrect": true,
+      "identityKeyedOverReach": [],
+      "identityKeyedMissing": []
+    },
+    {
+      "name": "foo",
+      "declFile": "src/fileC.ts",
+      "note": "fileC.foo",
+      "expected": [
+        "src/callersC.ts",
+        "src/fileC.ts"
+      ],
+      "nameKeyedOracle": [
+        "src/barrel-users.ts",
+        "src/callersA.ts",
+        "src/callersB.ts",
+        "src/callersC.ts",
+        "src/fileA.ts",
+        "src/fileB.ts",
+        "src/fileC.ts",
+        "src/nested.ts"
+      ],
+      "nameKeyedCorrect": false,
+      "nameKeyedOverReach": [
+        "src/barrel-users.ts",
+        "src/callersA.ts",
+        "src/callersB.ts",
+        "src/fileA.ts",
+        "src/fileB.ts",
+        "src/nested.ts"
+      ],
+      "identityKeyedOracle": [
+        "src/callersC.ts",
+        "src/fileC.ts"
+      ],
+      "identityKeyedCorrect": true,
+      "identityKeyedOverReach": [],
+      "identityKeyedMissing": []
+    },
+    {
+      "name": "helperA",
+      "declFile": "src/fileA.ts",
+      "note": "transitive through fileA.foo only",
+      "expected": [
+        "src/barrel-users.ts",
+        "src/callersA.ts",
+        "src/fileA.ts"
+      ],
+      "nameKeyedOracle": [
+        "src/barrel-users.ts",
+        "src/callersA.ts",
+        "src/callersB.ts",
+        "src/callersC.ts",
+        "src/fileA.ts",
+        "src/fileB.ts",
+        "src/fileC.ts",
+        "src/nested.ts"
+      ],
+      "nameKeyedCorrect": false,
+      "nameKeyedOverReach": [
+        "src/callersB.ts",
+        "src/callersC.ts",
+        "src/fileB.ts",
+        "src/fileC.ts",
+        "src/nested.ts"
+      ],
+      "identityKeyedOracle": [
+        "src/barrel-users.ts",
+        "src/callersA.ts",
+        "src/fileA.ts"
+      ],
+      "identityKeyedCorrect": true,
+      "identityKeyedOverReach": [],
+      "identityKeyedMissing": []
+    },
+    {
+      "name": "helperB",
+      "declFile": "src/fileB.ts",
+      "note": "transitive through fileB.foo only",
+      "expected": [
+        "src/callersB.ts",
+        "src/fileB.ts"
+      ],
+      "nameKeyedOracle": [
+        "src/barrel-users.ts",
+        "src/callersA.ts",
+        "src/callersB.ts",
+        "src/callersC.ts",
+        "src/fileA.ts",
+        "src/fileB.ts",
+        "src/fileC.ts",
+        "src/nested.ts"
+      ],
+      "nameKeyedCorrect": false,
+      "nameKeyedOverReach": [
+        "src/barrel-users.ts",
+        "src/callersA.ts",
+        "src/callersC.ts",
+        "src/fileA.ts",
+        "src/fileC.ts",
+        "src/nested.ts"
+      ],
+      "identityKeyedOracle": [
+        "src/callersB.ts",
+        "src/fileB.ts"
+      ],
+      "identityKeyedCorrect": true,
+      "identityKeyedOverReach": [],
+      "identityKeyedMissing": []
+    },
+    {
+      "name": "render",
+      "declFile": "src/widgets.ts",
+      "note": "Widget.render; the alt Widget's identically-named render is a different symbol",
+      "expected": [
+        "src/widget-users.ts",
+        "src/widgets.ts"
+      ],
+      "nameKeyedOracle": [
+        "src/widget-users.ts",
+        "src/widgets-alt.ts",
+        "src/widgets.ts"
+      ],
+      "nameKeyedCorrect": false,
+      "nameKeyedOverReach": [
+        "src/widgets-alt.ts"
+      ],
+      "identityKeyedOracle": [
+        "src/widget-users.ts",
+        "src/widgets.ts"
+      ],
+      "identityKeyedCorrect": true,
+      "identityKeyedOverReach": [],
+      "identityKeyedMissing": []
+    },
+    {
+      "name": "render",
+      "declFile": "src/widgets-alt.ts",
+      "note": "AltWidget.render",
+      "expected": [
+        "src/widget-users.ts",
+        "src/widgets-alt.ts"
+      ],
+      "nameKeyedOracle": [
+        "src/widget-users.ts",
+        "src/widgets-alt.ts",
+        "src/widgets.ts"
+      ],
+      "nameKeyedCorrect": false,
+      "nameKeyedOverReach": [
+        "src/widgets.ts"
+      ],
+      "identityKeyedOracle": [
+        "src/widget-users.ts",
+        "src/widgets-alt.ts"
+      ],
+      "identityKeyedCorrect": true,
+      "identityKeyedOverReach": [],
+      "identityKeyedMissing": []
+    }
+  ]
+}

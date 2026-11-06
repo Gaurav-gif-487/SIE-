@@ -1,0 +1,402 @@
+[
+  {
+    "arm": "adaptive|cold|CallImpact",
+    "tasks": 29,
+    "f1": 0.925,
+    "precision": 0.966,
+    "recall": 0.923,
+    "meanWallMs": 6117.3,
+    "meanAnalyses": 7.79,
+    "meanNotRun": 1.86
+  },
+  {
+    "arm": "adaptive|cold|FindCallees",
+    "tasks": 29,
+    "f1": 0.677,
+    "precision": 0.828,
+    "recall": 0.617,
+    "meanWallMs": 7066.9,
+    "meanAnalyses": 5.79,
+    "meanNotRun": 1.59
+  },
+  {
+    "arm": "adaptive|cold|FindCallers",
+    "tasks": 29,
+    "f1": 0.969,
+    "precision": 1,
+    "recall": 0.958,
+    "meanWallMs": 4874.3,
+    "meanAnalyses": 6.03,
+    "meanNotRun": 1.03
+  },
+  {
+    "arm": "adaptive|cold|ImportImpact",
+    "tasks": 29,
+    "f1": 1,
+    "precision": 1,
+    "recall": 1,
+    "meanWallMs": 1167.4,
+    "meanAnalyses": 2,
+    "meanNotRun": 0
+  },
+  {
+    "arm": "adaptive|cold|TestImpact",
+    "tasks": 28,
+    "f1": 0.978,
+    "precision": 1,
+    "recall": 0.962,
+    "meanWallMs": 6039.3,
+    "meanAnalyses": 4,
+    "meanNotRun": 4
+  },
+  {
+    "arm": "adaptive|warm|CallImpact",
+    "tasks": 33,
+    "f1": 0.934,
+    "precision": 0.97,
+    "recall": 0.932,
+    "meanWallMs": 945.3,
+    "meanAnalyses": 0.21,
+    "meanNotRun": 1.88
+  },
+  {
+    "arm": "adaptive|warm|FindCallees",
+    "tasks": 33,
+    "f1": 0.706,
+    "precision": 0.848,
+    "recall": 0.649,
+    "meanWallMs": 1785.6,
+    "meanAnalyses": 0.06,
+    "meanNotRun": 1.45
+  },
+  {
+    "arm": "adaptive|warm|FindCallers",
+    "tasks": 33,
+    "f1": 0.973,
+    "precision": 1,
+    "recall": 0.963,
+    "meanWallMs": 1059.7,
+    "meanAnalyses": 0.94,
+    "meanNotRun": 1.09
+  },
+  {
+    "arm": "adaptive|warm|ImportImpact",
+    "tasks": 33,
+    "f1": 1,
+    "precision": 1,
+    "recall": 1,
+    "meanWallMs": 266.2,
+    "meanAnalyses": 0,
+    "meanNotRun": 0
+  },
+  {
+    "arm": "adaptive|warm|TestImpact",
+    "tasks": 33,
+    "f1": 0.981,
+    "precision": 1,
+    "recall": 0.968,
+    "meanWallMs": 1222.2,
+    "meanAnalyses": 0,
+    "meanNotRun": 4
+  },
+  {
+    "arm": "conventional|cold|CallImpact",
+    "tasks": 33,
+    "f1": 0.731,
+    "precision": 0.739,
+    "recall": 0.811,
+    "meanWallMs": 4,
+    "meanAnalyses": 0,
+    "meanNotRun": 0
+  },
+  {
+    "arm": "conventional|cold|FindCallees",
+    "tasks": 33,
+    "f1": 0.579,
+    "precision": 0.697,
+    "recall": 0.517,
+    "meanWallMs": 168.9,
+    "meanAnalyses": 0,
+    "meanNotRun": 0
+  },
+  {
+    "arm": "conventional|cold|FindCallers",
+    "tasks": 33,
+    "f1": 0.999,
+    "precision": 0.997,
+    "recall": 1,
+    "meanWallMs": 1443.2,
+    "meanAnalyses": 0,
+    "meanNotRun": 0
+  },
+  {
+    "arm": "conventional|cold|ImportImpact",
+    "tasks": 33,
+    "f1": 0.608,
+    "precision": 0.97,
+    "recall": 0.555,
+    "meanWallMs": 4.3,
+    "meanAnalyses": 0,
+    "meanNotRun": 0
+  },
+  {
+    "arm": "conventional|cold|TestImpact",
+    "tasks": 33,
+    "f1": 0.779,
+    "precision": 0.879,
+    "recall": 0.77,
+    "meanWallMs": 5.3,
+    "meanAnalyses": 0,
+    "meanNotRun": 0
+  },
+  {
+    "arm": "conventional|warm|CallImpact",
+    "tasks": 33,
+    "f1": 0.731,
+    "precision": 0.739,
+    "recall": 0.811,
+    "meanWallMs": 4.2,
+    "meanAnalyses": 0,
+    "meanNotRun": 0
+  },
+  {
+    "arm": "conventional|warm|FindCallees",
+    "tasks": 33,
+    "f1": 0.579,
+    "precision": 0.697,
+    "recall": 0.517,
+    "meanWallMs": 154.7,
+    "meanAnalyses": 0,
+    "meanNotRun": 0
+  },
+  {
+    "arm": "conventional|warm|FindCallers",
+    "tasks": 33,
+    "f1": 0.999,
+    "precision": 0.997,
+    "recall": 1,
+    "meanWallMs": 1163.3,
+    "meanAnalyses": 0,
+    "meanNotRun": 0
+  },
+  {
+    "arm": "conventional|warm|ImportImpact",
+    "tasks": 33,
+    "f1": 0.608,
+    "precision": 0.97,
+    "recall": 0.555,
+    "meanWallMs": 4.1,
+    "meanAnalyses": 0,
+    "meanNotRun": 0
+  },
+  {
+    "arm": "conventional|warm|TestImpact",
+    "tasks": 33,
+    "f1": 0.779,
+    "precision": 0.879,
+    "recall": 0.77,
+    "meanWallMs": 5.1,
+    "meanAnalyses": 0,
+    "meanNotRun": 0
+  },
+  {
+    "arm": "exhaustive|cold|CallImpact",
+    "tasks": 33,
+    "f1": 0.934,
+    "precision": 0.97,
+    "recall": 0.932,
+    "meanWallMs": 5757.9,
+    "meanAnalyses": 7.82,
+    "meanNotRun": 1.88
+  },
+  {
+    "arm": "exhaustive|cold|FindCallees",
+    "tasks": 33,
+    "f1": 0.706,
+    "precision": 0.848,
+    "recall": 0.649,
+    "meanWallMs": 7232.1,
+    "meanAnalyses": 5.73,
+    "meanNotRun": 1.45
+  },
+  {
+    "arm": "exhaustive|cold|FindCallers",
+    "tasks": 33,
+    "f1": 0.973,
+    "precision": 1,
+    "recall": 0.963,
+    "meanWallMs": 5189.5,
+    "meanAnalyses": 6.09,
+    "meanNotRun": 1.09
+  },
+  {
+    "arm": "exhaustive|cold|ImportImpact",
+    "tasks": 33,
+    "f1": 1,
+    "precision": 1,
+    "recall": 1,
+    "meanWallMs": 1247.2,
+    "meanAnalyses": 2,
+    "meanNotRun": 0
+  },
+  {
+    "arm": "exhaustive|cold|TestImpact",
+    "tasks": 33,
+    "f1": 0.981,
+    "precision": 1,
+    "recall": 0.968,
+    "meanWallMs": 5198.2,
+    "meanAnalyses": 4,
+    "meanNotRun": 4
+  },
+  {
+    "arm": "exhaustive|warm|CallImpact",
+    "tasks": 33,
+    "f1": 0.934,
+    "precision": 0.97,
+    "recall": 0.932,
+    "meanWallMs": 964.8,
+    "meanAnalyses": 0.21,
+    "meanNotRun": 1.88
+  },
+  {
+    "arm": "exhaustive|warm|FindCallees",
+    "tasks": 33,
+    "f1": 0.706,
+    "precision": 0.848,
+    "recall": 0.649,
+    "meanWallMs": 1860,
+    "meanAnalyses": 0.06,
+    "meanNotRun": 1.45
+  },
+  {
+    "arm": "exhaustive|warm|FindCallers",
+    "tasks": 33,
+    "f1": 0.973,
+    "precision": 1,
+    "recall": 0.963,
+    "meanWallMs": 1048.7,
+    "meanAnalyses": 0.94,
+    "meanNotRun": 1.09
+  },
+  {
+    "arm": "exhaustive|warm|ImportImpact",
+    "tasks": 33,
+    "f1": 1,
+    "precision": 1,
+    "recall": 1,
+    "meanWallMs": 272.3,
+    "meanAnalyses": 0,
+    "meanNotRun": 0
+  },
+  {
+    "arm": "exhaustive|warm|TestImpact",
+    "tasks": 33,
+    "f1": 0.981,
+    "precision": 1,
+    "recall": 0.968,
+    "meanWallMs": 1144.6,
+    "meanAnalyses": 0,
+    "meanNotRun": 4
+  },
+  {
+    "arm": "required-only|cold|CallImpact",
+    "tasks": 33,
+    "f1": 0.934,
+    "precision": 0.97,
+    "recall": 0.932,
+    "meanWallMs": 5223.8,
+    "meanAnalyses": 5.94,
+    "meanNotRun": 3.76
+  },
+  {
+    "arm": "required-only|cold|FindCallees",
+    "tasks": 33,
+    "f1": 0.706,
+    "precision": 0.848,
+    "recall": 0.649,
+    "meanWallMs": 4860.7,
+    "meanAnalyses": 5,
+    "meanNotRun": 2.18
+  },
+  {
+    "arm": "required-only|cold|FindCallers",
+    "tasks": 33,
+    "f1": 0.973,
+    "precision": 1,
+    "recall": 0.963,
+    "meanWallMs": 4032.2,
+    "meanAnalyses": 5,
+    "meanNotRun": 2.18
+  },
+  {
+    "arm": "required-only|cold|ImportImpact",
+    "tasks": 33,
+    "f1": 1,
+    "precision": 1,
+    "recall": 1,
+    "meanWallMs": 979.5,
+    "meanAnalyses": 2,
+    "meanNotRun": 0
+  },
+  {
+    "arm": "required-only|cold|TestImpact",
+    "tasks": 33,
+    "f1": 0.981,
+    "precision": 1,
+    "recall": 0.968,
+    "meanWallMs": 4514,
+    "meanAnalyses": 4,
+    "meanNotRun": 4
+  },
+  {
+    "arm": "required-only|warm|CallImpact",
+    "tasks": 33,
+    "f1": 0.934,
+    "precision": 0.97,
+    "recall": 0.932,
+    "meanWallMs": 1061.5,
+    "meanAnalyses": 0.3,
+    "meanNotRun": 2.82
+  },
+  {
+    "arm": "required-only|warm|FindCallees",
+    "tasks": 33,
+    "f1": 0.706,
+    "precision": 0.848,
+    "recall": 0.649,
+    "meanWallMs": 1385.8,
+    "meanAnalyses": 0,
+    "meanNotRun": 1.61
+  },
+  {
+    "arm": "required-only|warm|FindCallers",
+    "tasks": 33,
+    "f1": 0.973,
+    "precision": 1,
+    "recall": 0.963,
+    "meanWallMs": 1153,
+    "meanAnalyses": 0.76,
+    "meanNotRun": 1.27
+  },
+  {
+    "arm": "required-only|warm|ImportImpact",
+    "tasks": 33,
+    "f1": 1,
+    "precision": 1,
+    "recall": 1,
+    "meanWallMs": 268.1,
+    "meanAnalyses": 0,
+    "meanNotRun": 0
+  },
+  {
+    "arm": "required-only|warm|TestImpact",
+    "tasks": 33,
+    "f1": 0.981,
+    "precision": 1,
+    "recall": 0.968,
+    "meanWallMs": 1175.4,
+    "meanAnalyses": 0,
+    "meanNotRun": 4
+  }
+]

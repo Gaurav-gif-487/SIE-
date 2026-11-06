@@ -1,0 +1,276 @@
+{
+  "repo": "repo-c",
+  "tasks": [
+    {
+      "repo": "repo-c",
+      "type": "FindCallers",
+      "symbol": "encode",
+      "declaration": "src/codec.ts:7"
+    },
+    {
+      "repo": "repo-c",
+      "type": "FindCallees",
+      "symbol": "encode",
+      "declaration": "src/codec.ts:7"
+    },
+    {
+      "repo": "repo-c",
+      "type": "ImportImpact",
+      "symbol": "encode",
+      "declaration": "src/codec.ts:7"
+    },
+    {
+      "repo": "repo-c",
+      "type": "CallImpact",
+      "symbol": "encode",
+      "declaration": "src/codec.ts:7"
+    },
+    {
+      "repo": "repo-c",
+      "type": "TestImpact",
+      "symbol": "encode",
+      "declaration": "src/codec.ts:7"
+    },
+    {
+      "repo": "repo-c",
+      "type": "FindCallers",
+      "symbol": "packDynamic",
+      "declaration": "src/pack.ts:34"
+    },
+    {
+      "repo": "repo-c",
+      "type": "FindCallees",
+      "symbol": "packDynamic",
+      "declaration": "src/pack.ts:34"
+    },
+    {
+      "repo": "repo-c",
+      "type": "ImportImpact",
+      "symbol": "packDynamic",
+      "declaration": "src/pack.ts:34"
+    },
+    {
+      "repo": "repo-c",
+      "type": "CallImpact",
+      "symbol": "packDynamic",
+      "declaration": "src/pack.ts:34"
+    },
+    {
+      "repo": "repo-c",
+      "type": "TestImpact",
+      "symbol": "packDynamic",
+      "declaration": "src/pack.ts:34"
+    },
+    {
+      "repo": "repo-c",
+      "type": "FindCallers",
+      "symbol": "packAll",
+      "declaration": "src/pack.ts:39"
+    },
+    {
+      "repo": "repo-c",
+      "type": "FindCallees",
+      "symbol": "packAll",
+      "declaration": "src/pack.ts:39"
+    },
+    {
+      "repo": "repo-c",
+      "type": "ImportImpact",
+      "symbol": "packAll",
+      "declaration": "src/pack.ts:39"
+    },
+    {
+      "repo": "repo-c",
+      "type": "CallImpact",
+      "symbol": "packAll",
+      "declaration": "src/pack.ts:39"
+    },
+    {
+      "repo": "repo-c",
+      "type": "TestImpact",
+      "symbol": "packAll",
+      "declaration": "src/pack.ts:39"
+    },
+    {
+      "repo": "repo-c",
+      "type": "FindCallers",
+      "symbol": "pick",
+      "declaration": "src/pack.ts:3"
+    },
+    {
+      "repo": "repo-c",
+      "type": "FindCallees",
+      "symbol": "pick",
+      "declaration": "src/pack.ts:3"
+    },
+    {
+      "repo": "repo-c",
+      "type": "ImportImpact",
+      "symbol": "pick",
+      "declaration": "src/pack.ts:3"
+    },
+    {
+      "repo": "repo-c",
+      "type": "CallImpact",
+      "symbol": "pick",
+      "declaration": "src/pack.ts:3"
+    },
+    {
+      "repo": "repo-c",
+      "type": "TestImpact",
+      "symbol": "pick",
+      "declaration": "src/pack.ts:3"
+    },
+    {
+      "repo": "repo-c",
+      "type": "FindCallers",
+      "symbol": "packViaInterface",
+      "declaration": "src/pack.ts:8"
+    },
+    {
+      "repo": "repo-c",
+      "type": "FindCallees",
+      "symbol": "packViaInterface",
+      "declaration": "src/pack.ts:8"
+    },
+    {
+      "repo": "repo-c",
+      "type": "ImportImpact",
+      "symbol": "packViaInterface",
+      "declaration": "src/pack.ts:8"
+    },
+    {
+      "repo": "repo-c",
+      "type": "CallImpact",
+      "symbol": "packViaInterface",
+      "declaration": "src/pack.ts:8"
+    },
+    {
+      "repo": "repo-c",
+      "type": "TestImpact",
+      "symbol": "packViaInterface",
+      "declaration": "src/pack.ts:8"
+    },
+    {
+      "repo": "repo-c",
+      "type": "FindCallers",
+      "symbol": "roundTrip",
+      "declaration": "src/codec.ts:9"
+    },
+    {
+      "repo": "repo-c",
+      "type": "FindCallees",
+      "symbol": "roundTrip",
+      "declaration": "src/codec.ts:9"
+    },
+    {
+      "repo": "repo-c",
+      "type": "ImportImpact",
+      "symbol": "roundTrip",
+      "declaration": "src/codec.ts:9"
+    },
+    {
+      "repo": "repo-c",
+      "type": "CallImpact",
+      "symbol": "roundTrip",
+      "declaration": "src/codec.ts:9"
+    },
+    {
+      "repo": "repo-c",
+      "type": "TestImpact",
+      "symbol": "roundTrip",
+      "declaration": "src/codec.ts:9"
+    }
+  ],
+  "gt": {
+    "FindCallers:encode": [
+      "src/codec.ts:10",
+      "src/pack.ts:10",
+      "src/pack.ts:15",
+      "src/pack.ts:20",
+      "src/pack.ts:25",
+      "src/pack.ts:30",
+      "src/pack.ts:41"
+    ],
+    "FindCallees:encode": [],
+    "ImportImpact:encode": [
+      "src/codec.ts",
+      "src/pack.ts"
+    ],
+    "CallImpact:encode": [
+      "src/codec.ts",
+      "src/pack.ts"
+    ],
+    "TestImpact:encode": [],
+    "FindCallers:packDynamic": [],
+    "FindCallees:packDynamic": [],
+    "ImportImpact:packDynamic": [
+      "src/pack.ts"
+    ],
+    "CallImpact:packDynamic": [
+      "src/pack.ts"
+    ],
+    "TestImpact:packDynamic": [],
+    "FindCallers:packAll": [],
+    "FindCallees:packAll": [
+      "encode",
+      "pick"
+    ],
+    "ImportImpact:packAll": [
+      "src/pack.ts"
+    ],
+    "CallImpact:packAll": [
+      "src/pack.ts"
+    ],
+    "TestImpact:packAll": [],
+    "FindCallers:pick": [
+      "src/pack.ts:40",
+      "src/pack.ts:9"
+    ],
+    "FindCallees:pick": [
+      "Base64Codec",
+      "HexCodec"
+    ],
+    "ImportImpact:pick": [
+      "src/pack.ts"
+    ],
+    "CallImpact:pick": [
+      "src/pack.ts"
+    ],
+    "TestImpact:pick": [],
+    "FindCallers:packViaInterface": [],
+    "FindCallees:packViaInterface": [
+      "encode",
+      "pick"
+    ],
+    "ImportImpact:packViaInterface": [
+      "src/pack.ts"
+    ],
+    "CallImpact:packViaInterface": [
+      "src/pack.ts"
+    ],
+    "TestImpact:packViaInterface": [],
+    "FindCallers:roundTrip": [],
+    "FindCallees:roundTrip": [
+      "decode",
+      "encode"
+    ],
+    "ImportImpact:roundTrip": [
+      "src/codec.ts",
+      "src/pack.ts"
+    ],
+    "CallImpact:roundTrip": [
+      "src/codec.ts"
+    ],
+    "TestImpact:roundTrip": []
+  },
+  "provenance": {
+    "oracleVersionHash": "26c0f7c85f781ff443922a34f3c0bb871c67f4bc51a934292fdcf3652d183e75",
+    "repositorySnapshot": {
+      "sha": null,
+      "files": 2,
+      "loc": 81
+    },
+    "generatedAt": "2026-11-05T03:18:10.953Z"
+  }
+}

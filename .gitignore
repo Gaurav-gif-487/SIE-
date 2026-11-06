@@ -1,0 +1,12 @@
+node_modules/
+.sie-cache/
+*.log
+dist/
+.DS_Store
+data/trajectories/*
+!data/trajectories/.gitkeep
+data/sandboxes/
+
+corpus/
+data/experiments/
+data/reports/

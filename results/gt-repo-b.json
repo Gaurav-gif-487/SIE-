@@ -1,0 +1,293 @@
+{
+  "repo": "repo-b",
+  "tasks": [
+    {
+      "repo": "repo-b",
+      "type": "FindCallers",
+      "symbol": "handle",
+      "declaration": "src/types.ts:6"
+    },
+    {
+      "repo": "repo-b",
+      "type": "FindCallees",
+      "symbol": "handle",
+      "declaration": "src/types.ts:6"
+    },
+    {
+      "repo": "repo-b",
+      "type": "ImportImpact",
+      "symbol": "handle",
+      "declaration": "src/types.ts:6"
+    },
+    {
+      "repo": "repo-b",
+      "type": "CallImpact",
+      "symbol": "handle",
+      "declaration": "src/types.ts:6"
+    },
+    {
+      "repo": "repo-b",
+      "type": "TestImpact",
+      "symbol": "handle",
+      "declaration": "src/types.ts:6"
+    },
+    {
+      "repo": "repo-b",
+      "type": "FindCallers",
+      "symbol": "viaMethodReference",
+      "declaration": "src/indirect.ts:6"
+    },
+    {
+      "repo": "repo-b",
+      "type": "FindCallees",
+      "symbol": "viaMethodReference",
+      "declaration": "src/indirect.ts:6"
+    },
+    {
+      "repo": "repo-b",
+      "type": "ImportImpact",
+      "symbol": "viaMethodReference",
+      "declaration": "src/indirect.ts:6"
+    },
+    {
+      "repo": "repo-b",
+      "type": "CallImpact",
+      "symbol": "viaMethodReference",
+      "declaration": "src/indirect.ts:6"
+    },
+    {
+      "repo": "repo-b",
+      "type": "TestImpact",
+      "symbol": "viaMethodReference",
+      "declaration": "src/indirect.ts:6"
+    },
+    {
+      "repo": "repo-b",
+      "type": "FindCallers",
+      "symbol": "viaFunctionVariable",
+      "declaration": "src/indirect.ts:13"
+    },
+    {
+      "repo": "repo-b",
+      "type": "FindCallees",
+      "symbol": "viaFunctionVariable",
+      "declaration": "src/indirect.ts:13"
+    },
+    {
+      "repo": "repo-b",
+      "type": "ImportImpact",
+      "symbol": "viaFunctionVariable",
+      "declaration": "src/indirect.ts:13"
+    },
+    {
+      "repo": "repo-b",
+      "type": "CallImpact",
+      "symbol": "viaFunctionVariable",
+      "declaration": "src/indirect.ts:13"
+    },
+    {
+      "repo": "repo-b",
+      "type": "TestImpact",
+      "symbol": "viaFunctionVariable",
+      "declaration": "src/indirect.ts:13"
+    },
+    {
+      "repo": "repo-b",
+      "type": "FindCallers",
+      "symbol": "passesCallback",
+      "declaration": "src/indirect.ts:24"
+    },
+    {
+      "repo": "repo-b",
+      "type": "FindCallees",
+      "symbol": "passesCallback",
+      "declaration": "src/indirect.ts:24"
+    },
+    {
+      "repo": "repo-b",
+      "type": "ImportImpact",
+      "symbol": "passesCallback",
+      "declaration": "src/indirect.ts:24"
+    },
+    {
+      "repo": "repo-b",
+      "type": "CallImpact",
+      "symbol": "passesCallback",
+      "declaration": "src/indirect.ts:24"
+    },
+    {
+      "repo": "repo-b",
+      "type": "TestImpact",
+      "symbol": "passesCallback",
+      "declaration": "src/indirect.ts:24"
+    },
+    {
+      "repo": "repo-b",
+      "type": "FindCallers",
+      "symbol": "makeHandler",
+      "declaration": "src/handlers.ts:22"
+    },
+    {
+      "repo": "repo-b",
+      "type": "FindCallees",
+      "symbol": "makeHandler",
+      "declaration": "src/handlers.ts:22"
+    },
+    {
+      "repo": "repo-b",
+      "type": "ImportImpact",
+      "symbol": "makeHandler",
+      "declaration": "src/handlers.ts:22"
+    },
+    {
+      "repo": "repo-b",
+      "type": "CallImpact",
+      "symbol": "makeHandler",
+      "declaration": "src/handlers.ts:22"
+    },
+    {
+      "repo": "repo-b",
+      "type": "TestImpact",
+      "symbol": "makeHandler",
+      "declaration": "src/handlers.ts:22"
+    },
+    {
+      "repo": "repo-b",
+      "type": "FindCallers",
+      "symbol": "invokeUnrelated",
+      "declaration": "src/dispatch.ts:26"
+    },
+    {
+      "repo": "repo-b",
+      "type": "FindCallees",
+      "symbol": "invokeUnrelated",
+      "declaration": "src/dispatch.ts:26"
+    },
+    {
+      "repo": "repo-b",
+      "type": "ImportImpact",
+      "symbol": "invokeUnrelated",
+      "declaration": "src/dispatch.ts:26"
+    },
+    {
+      "repo": "repo-b",
+      "type": "CallImpact",
+      "symbol": "invokeUnrelated",
+      "declaration": "src/dispatch.ts:26"
+    },
+    {
+      "repo": "repo-b",
+      "type": "TestImpact",
+      "symbol": "invokeUnrelated",
+      "declaration": "src/dispatch.ts:26"
+    }
+  ],
+  "gt": {
+    "FindCallers:handle": [
+      "src/default-export.ts:5",
+      "src/dispatch.ts:11",
+      "src/dispatch.ts:16",
+      "src/dispatch.ts:22",
+      "src/dispatch.ts:28",
+      "src/dispatch.ts:6",
+      "src/indirect.ts:16",
+      "src/indirect.ts:26",
+      "src/indirect.ts:31",
+      "src/indirect.ts:41"
+    ],
+    "FindCallees:handle": [],
+    "ImportImpact:handle": [
+      "src/barrel.ts",
+      "src/default-export.ts",
+      "src/dispatch.ts",
+      "src/handlers.ts",
+      "src/indirect.ts",
+      "src/types.ts"
+    ],
+    "CallImpact:handle": [
+      "src/default-export.ts",
+      "src/dispatch.ts",
+      "src/handlers.ts",
+      "src/indirect.ts",
+      "src/types.ts"
+    ],
+    "TestImpact:handle": [],
+    "FindCallers:viaMethodReference": [],
+    "FindCallees:viaMethodReference": [
+      "JsonHandler",
+      "fn"
+    ],
+    "ImportImpact:viaMethodReference": [
+      "src/indirect.ts"
+    ],
+    "CallImpact:viaMethodReference": [
+      "src/indirect.ts"
+    ],
+    "TestImpact:viaMethodReference": [],
+    "FindCallers:viaFunctionVariable": [],
+    "FindCallees:viaFunctionVariable": [
+      "fn",
+      "handle"
+    ],
+    "ImportImpact:viaFunctionVariable": [
+      "src/indirect.ts"
+    ],
+    "CallImpact:viaFunctionVariable": [
+      "src/indirect.ts"
+    ],
+    "TestImpact:viaFunctionVariable": [],
+    "FindCallers:passesCallback": [],
+    "FindCallees:passesCallback": [
+      "JsonHandler",
+      "handle",
+      "viaCallback"
+    ],
+    "ImportImpact:passesCallback": [
+      "src/indirect.ts"
+    ],
+    "CallImpact:passesCallback": [
+      "src/indirect.ts"
+    ],
+    "TestImpact:passesCallback": [],
+    "FindCallers:makeHandler": [
+      "src/indirect.ts:41"
+    ],
+    "FindCallees:makeHandler": [
+      "JsonHandler",
+      "XmlHandler"
+    ],
+    "ImportImpact:makeHandler": [
+      "src/barrel.ts",
+      "src/default-export.ts",
+      "src/dispatch.ts",
+      "src/handlers.ts",
+      "src/indirect.ts"
+    ],
+    "CallImpact:makeHandler": [
+      "src/handlers.ts",
+      "src/indirect.ts"
+    ],
+    "TestImpact:makeHandler": [],
+    "FindCallers:invokeUnrelated": [],
+    "FindCallees:invokeUnrelated": [
+      "Unrelated",
+      "handle"
+    ],
+    "ImportImpact:invokeUnrelated": [
+      "src/dispatch.ts"
+    ],
+    "CallImpact:invokeUnrelated": [
+      "src/dispatch.ts"
+    ],
+    "TestImpact:invokeUnrelated": []
+  },
+  "provenance": {
+    "oracleVersionHash": "26c0f7c85f781ff443922a34f3c0bb871c67f4bc51a934292fdcf3652d183e75",
+    "repositorySnapshot": {
+      "sha": null,
+      "files": 6,
+      "loc": 132
+    },
+    "generatedAt": "2026-11-05T03:18:06.409Z"
+  }
+}

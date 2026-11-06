@@ -1,0 +1,9 @@
+
+=== repo-b (/tmp/z/sie-final-validation/tests/fixtures/repo-b) ===
+  handle: P=1.00 R=1.00 F1=1.00 (engine=5, oracle=5, fp=0, fn=0)
+  viaMethodReference: P=1.00 R=1.00 F1=1.00 (engine=1, oracle=1, fp=0, fn=0)
+  viaFunctionVariable: P=1.00 R=1.00 F1=1.00 (engine=1, oracle=1, fp=0, fn=0)
+  passesCallback: P=1.00 R=1.00 F1=1.00 (engine=1, oracle=1, fp=0, fn=0)
+  makeHandler: P=1.00 R=1.00 F1=1.00 (engine=2, oracle=2, fp=0, fn=0)
+  invokeUnrelated: P=1.00 R=1.00 F1=1.00 (engine=1, oracle=1, fp=0, fn=0)
+(Use `node --trace-warnings ...` to show where the warning was created)

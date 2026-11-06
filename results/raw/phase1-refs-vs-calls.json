@@ -1,0 +1,66 @@
+[
+  {
+    "repo": "repo-ref",
+    "symbol": "target",
+    "callTruth": [
+      "caller.ts",
+      "indirect.ts",
+      "target.ts"
+    ],
+    "refTruth": [
+      "caller.ts",
+      "indirect.ts",
+      "refonly.ts",
+      "target.ts"
+    ],
+    "arms": {
+      "calls+refs": {
+        "answer": [
+          "caller.ts",
+          "indirect.ts",
+          "refonly.ts",
+          "target.ts"
+        ],
+        "vsCallOracle": {
+          "precision": 0.75,
+          "recall": 1,
+          "f1": 0.8571428571428571,
+          "fp": [
+            "refonly.ts"
+          ],
+          "fn": []
+        },
+        "vsReferenceOracle": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1,
+          "fp": [],
+          "fn": []
+        }
+      },
+      "calls-only": {
+        "answer": [
+          "caller.ts",
+          "indirect.ts",
+          "target.ts"
+        ],
+        "vsCallOracle": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1,
+          "fp": [],
+          "fn": []
+        },
+        "vsReferenceOracle": {
+          "precision": 1,
+          "recall": 0.75,
+          "f1": 0.8571428571428571,
+          "fp": [],
+          "fn": [
+            "refonly.ts"
+          ]
+        }
+      }
+    }
+  }
+]

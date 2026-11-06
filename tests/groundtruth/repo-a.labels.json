@@ -1,0 +1,46 @@
+{
+  "$comment": "Independent hand-written ground truth for repo-a. Categories as in repo-b.labels.json. Note BaseService.authenticate has an EMPTY strict ground truth: the only call site (src/consumer.ts:25) has receiver type AdminService, which overrides authenticate, so the base body cannot execute there. This case exists to expose over-approximation in the engine's virtual-dispatch expansion.",
+  "repository": "tests/fixtures/repo-a",
+  "method": "manual-label",
+  "labelledBy": "human-read source review",
+  "targets": [
+    {
+      "task": "FindCallers",
+      "symbol": "FastRunner.run",
+      "declaration": "src/runners.ts:6",
+      "groundTruth": [
+        { "site": "src/consumer.ts:6", "category": "direct" },
+        { "site": "src/consumer.ts:16", "category": "direct" },
+        { "site": "src/consumer.ts:20", "category": "virtual" },
+        { "site": "src/consumer.ts:33", "category": "indirect" }
+      ]
+    },
+    {
+      "task": "FindCallers",
+      "symbol": "SlowRunner.run",
+      "declaration": "src/runners.ts:12",
+      "groundTruth": [
+        { "site": "src/consumer.ts:11", "category": "direct" },
+        { "site": "src/consumer.ts:20", "category": "virtual" }
+      ]
+    },
+    {
+      "task": "FindCallers",
+      "symbol": "AdminService.authenticate",
+      "declaration": "src/runners.ts:24",
+      "groundTruth": [{ "site": "src/consumer.ts:25", "category": "direct" }]
+    },
+    {
+      "task": "FindCallers",
+      "symbol": "BaseService.authenticate",
+      "declaration": "src/runners.ts:18",
+      "groundTruth": []
+    },
+    {
+      "task": "FindCallers",
+      "symbol": "useFast",
+      "declaration": "src/consumer.ts:4",
+      "groundTruth": []
+    }
+  ]
+}

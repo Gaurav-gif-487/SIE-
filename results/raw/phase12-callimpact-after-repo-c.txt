@@ -1,0 +1,9 @@
+
+=== repo-c (/tmp/z/sie-final-validation/tests/fixtures/repo-c) ===
+  encode: P=1.00 R=1.00 F1=1.00 (engine=2, oracle=2, fp=0, fn=0)
+  packDynamic: P=1.00 R=1.00 F1=1.00 (engine=1, oracle=1, fp=0, fn=0)
+  packAll: P=1.00 R=1.00 F1=1.00 (engine=1, oracle=1, fp=0, fn=0)
+  pick: P=1.00 R=1.00 F1=1.00 (engine=1, oracle=1, fp=0, fn=0)
+  packViaInterface: P=1.00 R=1.00 F1=1.00 (engine=1, oracle=1, fp=0, fn=0)
+  roundTrip: P=1.00 R=1.00 F1=1.00 (engine=1, oracle=1, fp=0, fn=0)
+(Use `node --trace-warnings ...` to show where the warning was created)

@@ -1,0 +1,509 @@
+{
+  "repo": "ky",
+  "tasks": [
+    {
+      "repo": "ky",
+      "type": "FindCallers",
+      "symbol": "create",
+      "declaration": "core/Ky.ts:143"
+    },
+    {
+      "repo": "ky",
+      "type": "FindCallees",
+      "symbol": "create",
+      "declaration": "core/Ky.ts:143"
+    },
+    {
+      "repo": "ky",
+      "type": "ImportImpact",
+      "symbol": "create",
+      "declaration": "core/Ky.ts:143"
+    },
+    {
+      "repo": "ky",
+      "type": "CallImpact",
+      "symbol": "create",
+      "declaration": "core/Ky.ts:143"
+    },
+    {
+      "repo": "ky",
+      "type": "TestImpact",
+      "symbol": "create",
+      "declaration": "core/Ky.ts:143"
+    },
+    {
+      "repo": "ky",
+      "type": "FindCallers",
+      "symbol": "isRawNetworkError",
+      "declaration": "utils/is-network-error.ts:18"
+    },
+    {
+      "repo": "ky",
+      "type": "FindCallees",
+      "symbol": "isRawNetworkError",
+      "declaration": "utils/is-network-error.ts:18"
+    },
+    {
+      "repo": "ky",
+      "type": "ImportImpact",
+      "symbol": "isRawNetworkError",
+      "declaration": "utils/is-network-error.ts:18"
+    },
+    {
+      "repo": "ky",
+      "type": "CallImpact",
+      "symbol": "isRawNetworkError",
+      "declaration": "utils/is-network-error.ts:18"
+    },
+    {
+      "repo": "ky",
+      "type": "TestImpact",
+      "symbol": "isRawNetworkError",
+      "declaration": "utils/is-network-error.ts:18"
+    },
+    {
+      "repo": "ky",
+      "type": "FindCallers",
+      "symbol": "transform",
+      "declaration": "utils/body.ts:51"
+    },
+    {
+      "repo": "ky",
+      "type": "FindCallees",
+      "symbol": "transform",
+      "declaration": "utils/body.ts:51"
+    },
+    {
+      "repo": "ky",
+      "type": "ImportImpact",
+      "symbol": "transform",
+      "declaration": "utils/body.ts:51"
+    },
+    {
+      "repo": "ky",
+      "type": "CallImpact",
+      "symbol": "transform",
+      "declaration": "utils/body.ts:51"
+    },
+    {
+      "repo": "ky",
+      "type": "TestImpact",
+      "symbol": "transform",
+      "declaration": "utils/body.ts:51"
+    },
+    {
+      "repo": "ky",
+      "type": "FindCallers",
+      "symbol": "delay",
+      "declaration": "utils/delay.ts:9"
+    },
+    {
+      "repo": "ky",
+      "type": "FindCallees",
+      "symbol": "delay",
+      "declaration": "utils/delay.ts:9"
+    },
+    {
+      "repo": "ky",
+      "type": "ImportImpact",
+      "symbol": "delay",
+      "declaration": "utils/delay.ts:9"
+    },
+    {
+      "repo": "ky",
+      "type": "CallImpact",
+      "symbol": "delay",
+      "declaration": "utils/delay.ts:9"
+    },
+    {
+      "repo": "ky",
+      "type": "TestImpact",
+      "symbol": "delay",
+      "declaration": "utils/delay.ts:9"
+    },
+    {
+      "repo": "ky",
+      "type": "FindCallers",
+      "symbol": "cloneInitHookOptions",
+      "declaration": "core/Ky.ts:96"
+    },
+    {
+      "repo": "ky",
+      "type": "FindCallees",
+      "symbol": "cloneInitHookOptions",
+      "declaration": "core/Ky.ts:96"
+    },
+    {
+      "repo": "ky",
+      "type": "ImportImpact",
+      "symbol": "cloneInitHookOptions",
+      "declaration": "core/Ky.ts:96"
+    },
+    {
+      "repo": "ky",
+      "type": "CallImpact",
+      "symbol": "cloneInitHookOptions",
+      "declaration": "core/Ky.ts:96"
+    },
+    {
+      "repo": "ky",
+      "type": "TestImpact",
+      "symbol": "cloneInitHookOptions",
+      "declaration": "core/Ky.ts:96"
+    },
+    {
+      "repo": "ky",
+      "type": "FindCallers",
+      "symbol": "timeout",
+      "declaration": "utils/timeout.ts:9"
+    },
+    {
+      "repo": "ky",
+      "type": "FindCallees",
+      "symbol": "timeout",
+      "declaration": "utils/timeout.ts:9"
+    },
+    {
+      "repo": "ky",
+      "type": "ImportImpact",
+      "symbol": "timeout",
+      "declaration": "utils/timeout.ts:9"
+    },
+    {
+      "repo": "ky",
+      "type": "CallImpact",
+      "symbol": "timeout",
+      "declaration": "utils/timeout.ts:9"
+    },
+    {
+      "repo": "ky",
+      "type": "TestImpact",
+      "symbol": "timeout",
+      "declaration": "utils/timeout.ts:9"
+    },
+    {
+      "repo": "ky",
+      "type": "FindCallers",
+      "symbol": "flush",
+      "declaration": "utils/body.ts:70"
+    },
+    {
+      "repo": "ky",
+      "type": "FindCallees",
+      "symbol": "flush",
+      "declaration": "utils/body.ts:70"
+    },
+    {
+      "repo": "ky",
+      "type": "ImportImpact",
+      "symbol": "flush",
+      "declaration": "utils/body.ts:70"
+    },
+    {
+      "repo": "ky",
+      "type": "CallImpact",
+      "symbol": "flush",
+      "declaration": "utils/body.ts:70"
+    },
+    {
+      "repo": "ky",
+      "type": "TestImpact",
+      "symbol": "flush",
+      "declaration": "utils/body.ts:70"
+    },
+    {
+      "repo": "ky",
+      "type": "FindCallers",
+      "symbol": "newHookValue",
+      "declaration": "utils/merge.ts:130"
+    },
+    {
+      "repo": "ky",
+      "type": "FindCallees",
+      "symbol": "newHookValue",
+      "declaration": "utils/merge.ts:130"
+    },
+    {
+      "repo": "ky",
+      "type": "ImportImpact",
+      "symbol": "newHookValue",
+      "declaration": "utils/merge.ts:130"
+    },
+    {
+      "repo": "ky",
+      "type": "CallImpact",
+      "symbol": "newHookValue",
+      "declaration": "utils/merge.ts:130"
+    },
+    {
+      "repo": "ky",
+      "type": "TestImpact",
+      "symbol": "newHookValue",
+      "declaration": "utils/merge.ts:130"
+    }
+  ],
+  "gt": {
+    "FindCallers:create": [
+      "index.ts:12",
+      "index.ts:16"
+    ],
+    "FindCallees:create": [
+      "#cancelBody",
+      "#cancelResponseBody",
+      "#consumeReturnedResponseFromBeforeRetryHook",
+      "#decorateResponse",
+      "#fetch",
+      "#getNormalizedOptions",
+      "#getResponseData",
+      "#getResponseRequest",
+      "#retry",
+      "#retryFromError",
+      "#runAfterResponseHooks",
+      "#runBeforeRequestHooks",
+      "HTTPError",
+      "Ky",
+      "cloneInitHookOptions",
+      "function_",
+      "hook",
+      "isResponseInstance",
+      "parseJson",
+      "streamResponse",
+      "throwHttpErrors",
+      "validateJsonWithSchema"
+    ],
+    "ImportImpact:create": [
+      "core/Ky.ts",
+      "core/constants.ts",
+      "errors/ForceRetryError.ts",
+      "errors/HTTPError.ts",
+      "index.ts",
+      "types/hooks.ts",
+      "types/ky.ts",
+      "types/options.ts",
+      "types/retry.ts",
+      "utils/body.ts",
+      "utils/delay.ts",
+      "utils/merge.ts",
+      "utils/normalize.ts",
+      "utils/options.ts",
+      "utils/type-guards.ts"
+    ],
+    "CallImpact:create": [
+      "core/Ky.ts",
+      "index.ts"
+    ],
+    "TestImpact:create": [],
+    "FindCallers:isRawNetworkError": [
+      "core/Ky.ts:978"
+    ],
+    "FindCallees:isRawNetworkError": [
+      "isError"
+    ],
+    "ImportImpact:isRawNetworkError": [
+      "core/Ky.ts",
+      "core/constants.ts",
+      "errors/ForceRetryError.ts",
+      "errors/HTTPError.ts",
+      "index.ts",
+      "types/hooks.ts",
+      "types/ky.ts",
+      "types/options.ts",
+      "types/retry.ts",
+      "utils/body.ts",
+      "utils/delay.ts",
+      "utils/is-network-error.ts",
+      "utils/merge.ts",
+      "utils/normalize.ts",
+      "utils/options.ts",
+      "utils/type-guards.ts"
+    ],
+    "CallImpact:isRawNetworkError": [
+      "core/Ky.ts",
+      "utils/is-network-error.ts"
+    ],
+    "TestImpact:isRawNetworkError": [],
+    "FindCallers:transform": [],
+    "FindCallees:transform": [
+      "onProgress"
+    ],
+    "ImportImpact:transform": [
+      "core/Ky.ts",
+      "core/constants.ts",
+      "errors/ForceRetryError.ts",
+      "errors/HTTPError.ts",
+      "index.ts",
+      "types/hooks.ts",
+      "types/ky.ts",
+      "types/options.ts",
+      "types/retry.ts",
+      "utils/body.ts",
+      "utils/delay.ts",
+      "utils/merge.ts",
+      "utils/normalize.ts",
+      "utils/options.ts",
+      "utils/type-guards.ts"
+    ],
+    "CallImpact:transform": [
+      "utils/body.ts"
+    ],
+    "TestImpact:transform": [],
+    "FindCallers:delay": [
+      "core/Ky.ts:866",
+      "core/Ky.ts:872"
+    ],
+    "FindCallees:delay": [
+      "reject",
+      "resolve"
+    ],
+    "ImportImpact:delay": [
+      "core/Ky.ts",
+      "core/constants.ts",
+      "errors/ForceRetryError.ts",
+      "errors/HTTPError.ts",
+      "index.ts",
+      "types/hooks.ts",
+      "types/ky.ts",
+      "types/options.ts",
+      "types/retry.ts",
+      "utils/body.ts",
+      "utils/delay.ts",
+      "utils/merge.ts",
+      "utils/normalize.ts",
+      "utils/options.ts",
+      "utils/type-guards.ts"
+    ],
+    "CallImpact:delay": [
+      "core/Ky.ts",
+      "utils/delay.ts"
+    ],
+    "TestImpact:delay": [],
+    "FindCallers:cloneInitHookOptions": [
+      "core/Ky.ts:145"
+    ],
+    "FindCallees:cloneInitHookOptions": [
+      "cloneRetryOptions",
+      "cloneSearchParametersForInitHook",
+      "cloneShallow"
+    ],
+    "ImportImpact:cloneInitHookOptions": [
+      "core/Ky.ts",
+      "core/constants.ts",
+      "errors/ForceRetryError.ts",
+      "errors/HTTPError.ts",
+      "index.ts",
+      "types/hooks.ts",
+      "types/ky.ts",
+      "types/options.ts",
+      "types/retry.ts",
+      "utils/body.ts",
+      "utils/delay.ts",
+      "utils/merge.ts",
+      "utils/normalize.ts",
+      "utils/options.ts",
+      "utils/type-guards.ts"
+    ],
+    "CallImpact:cloneInitHookOptions": [
+      "core/Ky.ts",
+      "index.ts"
+    ],
+    "TestImpact:cloneInitHookOptions": [],
+    "FindCallers:timeout": [
+      "core/Ky.ts:971"
+    ],
+    "FindCallees:timeout": [
+      "TimeoutError",
+      "fetch",
+      "reject"
+    ],
+    "ImportImpact:timeout": [
+      "core/Ky.ts",
+      "core/constants.ts",
+      "errors/ForceRetryError.ts",
+      "errors/HTTPError.ts",
+      "index.ts",
+      "types/hooks.ts",
+      "types/ky.ts",
+      "types/options.ts",
+      "types/retry.ts",
+      "utils/body.ts",
+      "utils/delay.ts",
+      "utils/merge.ts",
+      "utils/normalize.ts",
+      "utils/options.ts",
+      "utils/timeout.ts",
+      "utils/type-guards.ts"
+    ],
+    "CallImpact:timeout": [
+      "core/Ky.ts",
+      "utils/timeout.ts"
+    ],
+    "TestImpact:timeout": [],
+    "FindCallers:flush": [],
+    "FindCallees:flush": [
+      "onProgress"
+    ],
+    "ImportImpact:flush": [
+      "core/Ky.ts",
+      "core/constants.ts",
+      "errors/ForceRetryError.ts",
+      "errors/HTTPError.ts",
+      "index.ts",
+      "types/hooks.ts",
+      "types/ky.ts",
+      "types/options.ts",
+      "types/retry.ts",
+      "utils/body.ts",
+      "utils/delay.ts",
+      "utils/merge.ts",
+      "utils/normalize.ts",
+      "utils/options.ts",
+      "utils/type-guards.ts"
+    ],
+    "CallImpact:flush": [
+      "utils/body.ts"
+    ],
+    "TestImpact:flush": [],
+    "FindCallers:newHookValue": [
+      "utils/merge.ts:138",
+      "utils/merge.ts:139",
+      "utils/merge.ts:140",
+      "utils/merge.ts:141",
+      "utils/merge.ts:142"
+    ],
+    "FindCallees:newHookValue": [
+      "deepMerge"
+    ],
+    "ImportImpact:newHookValue": [
+      "core/Ky.ts",
+      "core/constants.ts",
+      "errors/ForceRetryError.ts",
+      "errors/HTTPError.ts",
+      "index.ts",
+      "types/hooks.ts",
+      "types/ky.ts",
+      "types/options.ts",
+      "types/retry.ts",
+      "utils/body.ts",
+      "utils/delay.ts",
+      "utils/merge.ts",
+      "utils/normalize.ts",
+      "utils/options.ts",
+      "utils/type-guards.ts"
+    ],
+    "CallImpact:newHookValue": [
+      "core/Ky.ts",
+      "index.ts",
+      "utils/merge.ts"
+    ],
+    "TestImpact:newHookValue": []
+  },
+  "provenance": {
+    "oracleVersionHash": "26c0f7c85f781ff443922a34f3c0bb871c67f4bc51a934292fdcf3652d183e75",
+    "repositorySnapshot": {
+      "sha": "0a24c44fe4a15d0545c840facc56e473dd0b315b",
+      "files": 29,
+      "loc": 3735
+    },
+    "generatedAt": "2026-11-05T03:18:19.578Z"
+  }
+}

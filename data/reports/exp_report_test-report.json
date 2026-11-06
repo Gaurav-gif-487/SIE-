@@ -1,0 +1,24 @@
+{
+  "experiment_id": "exp_report_test",
+  "name": "Report Test",
+  "completed_at": "2026-11-06T05:16:40.032Z",
+  "data_label": "SYNTHETIC",
+  "execution_mode": "synthetic",
+  "total_tasks": 1,
+  "statistics": {
+    "control_n": 1,
+    "treatment_n": 0,
+    "control_success_rate": 1,
+    "treatment_success_rate": 0,
+    "absolute_treatment_effect": -1,
+    "relative_treatment_effect": -1,
+    "confidence_interval_95": "INSUFFICIENT_SAMPLE",
+    "p_value": "INSUFFICIENT_SAMPLE",
+    "statistically_significant": "INSUFFICIENT_SAMPLE",
+    "effect_size": "INSUFFICIENT_SAMPLE",
+    "sample_warning": "INSUFFICIENT SAMPLE: Sample size (control=1, treatment=0) is below required minimum threshold (10 per arm). Statistical significance cannot be asserted."
+  },
+  "provenance": {
+    "generated_at": "2026-11-06T05:16:40.033Z"
+  }
+}

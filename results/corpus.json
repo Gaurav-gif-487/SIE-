@@ -1,0 +1,42 @@
+{
+  "repo-a": {
+    "sha": null,
+    "files": 3,
+    "loc": 66,
+    "size": "small",
+    "origin": null,
+    "tasks": 25
+  },
+  "repo-b": {
+    "sha": null,
+    "files": 6,
+    "loc": 132,
+    "size": "small",
+    "origin": null,
+    "tasks": 30
+  },
+  "repo-c": {
+    "sha": null,
+    "files": 2,
+    "loc": 81,
+    "size": "small",
+    "origin": null,
+    "tasks": 30
+  },
+  "ky": {
+    "sha": "0a24c44fe4a15d0545c840facc56e473dd0b315b",
+    "files": 29,
+    "loc": 3735,
+    "size": "medium",
+    "origin": "https://github.com/sindresorhus/ky.git",
+    "tasks": 40
+  },
+  "zod": {
+    "sha": "1fb56a5c18c27102dbc92260a4007c7732a0ccca",
+    "files": 286,
+    "loc": 68631,
+    "size": "large",
+    "origin": "https://github.com/colinhacks/zod.git",
+    "tasks": 40
+  }
+}

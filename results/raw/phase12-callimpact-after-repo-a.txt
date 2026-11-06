@@ -1,0 +1,8 @@
+
+=== repo-a (/tmp/z/sie-final-validation/tests/fixtures/repo-a) ===
+  execute: P=1.00 R=1.00 F1=1.00 (engine=0, oracle=0, fp=0, fn=0)
+  login: P=1.00 R=1.00 F1=1.00 (engine=1, oracle=1, fp=0, fn=0)
+  useAlias: P=1.00 R=1.00 F1=1.00 (engine=1, oracle=1, fp=0, fn=0)
+  useFast: P=1.00 R=1.00 F1=1.00 (engine=1, oracle=1, fp=0, fn=0)
+  useSlow: P=1.00 R=1.00 F1=1.00 (engine=1, oracle=1, fp=0, fn=0)
+(Use `node --trace-warnings ...` to show where the warning was created)

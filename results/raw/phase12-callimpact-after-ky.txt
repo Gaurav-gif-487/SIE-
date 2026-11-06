@@ -1,0 +1,23 @@
+
+=== ky (/tmp/z/sie-final-validation/corpus/ky/source) ===
+  create: P=1.00 R=1.00 F1=1.00 (engine=2, oracle=2, fp=0, fn=0)
+  isRawNetworkError: P=0.67 R=1.00 F1=0.80 (engine=3, oracle=2, fp=1, fn=0)
+    edge resolutions: EXACT=17
+    edge kinds: CALLS=7, REFERENCES=10
+      fp file index.ts: dependents=ky,index.ts,createInstance edgeKinds=REFERENCES,CALLS
+  transform: P=1.00 R=1.00 F1=1.00 (engine=1, oracle=1, fp=0, fn=0)
+  delay: P=0.50 R=1.00 F1=0.67 (engine=4, oracle=2, fp=2, fn=0)
+    edge resolutions: EXACT=24
+    edge kinds: CALLS=9, REFERENCES=15
+      fp file core/retry-timing.ts: dependents=calculateRetryTimingDelay edgeKinds=REFERENCES
+      fp file index.ts: dependents=ky,index.ts,createInstance edgeKinds=REFERENCES,CALLS
+  cloneInitHookOptions: P=1.00 R=1.00 F1=1.00 (engine=2, oracle=2, fp=0, fn=0)
+  timeout: P=0.67 R=1.00 F1=0.80 (engine=3, oracle=2, fp=1, fn=0)
+    edge resolutions: EXACT=17
+    edge kinds: CALLS=7, REFERENCES=10
+      fp file index.ts: dependents=ky,index.ts,createInstance edgeKinds=REFERENCES,CALLS
+  flush: P=1.00 R=1.00 F1=1.00 (engine=1, oracle=1, fp=0, fn=0)
+  newHookValue: P=1.00 R=0.67 F1=0.80 (engine=2, oracle=3, fp=0, fn=1)
+    fn files (sample): index.ts
+(node:5255) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
